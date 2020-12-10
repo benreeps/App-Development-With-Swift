@@ -144,8 +144,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="85S-DT-tou">
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="85S-DT-tou">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                    <connections>
+                                                        <action selector="dateChanged:" destination="sKr-bE-vCi" eventType="valueChanged" id="5VY-Ld-3GD"/>
+                                                    </connections>
                                                 </datePicker>
                                             </subviews>
                                             <constraints>
@@ -212,6 +215,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="dobDatePicker" destination="85S-DT-tou" id="dAb-mZ-7nq"/>
                         <outlet property="dobLabel" destination="sb2-1b-Gac" id="94j-1d-oBq"/>
                         <outlet property="employeeTypeLabel" destination="iHP-Fp-n5s" id="VQw-h7-IY8"/>
                         <outlet property="nameTextField" destination="G1W-fA-Vfi" id="OxN-ZJ-COx"/>
