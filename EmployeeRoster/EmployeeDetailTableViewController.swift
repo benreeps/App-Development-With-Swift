@@ -1,7 +1,7 @@
 
 import UIKit
 
-class EmployeeDetailTableViewController: UITableViewController, UITextFieldDelegate {
+class EmployeeDetailTableViewController: UITableViewController, UITextFieldDelegate, EmployeeTypeDelegate {
 
     struct PropertyKeys {
         static let unwindToListIndentifier = "UnwindToListSegue"
@@ -13,6 +13,7 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
     @IBOutlet weak var dobDatePicker: UIDatePicker!
     
     var employee: Employee?
+    var employeeType: EmployeeType?
     
     var isEditingBirthday = false {
         didSet {
@@ -44,8 +45,8 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
-        if let name = nameTextField.text {
-            employee = Employee(name: name, dateOfBirth: dobDatePicker.date, employeeType: .exempt)
+        if let name = nameTextField.text, let type = employeeType {
+            employee = Employee(name: name, dateOfBirth: dobDatePicker.date, employeeType: type)
             performSegue(withIdentifier: PropertyKeys.unwindToListIndentifier, sender: self)
         }
     }
@@ -79,6 +80,20 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
         }
     }
     
+    // MARK: - Employee Type Delegate
+    func didSelect(employeeType: EmployeeType) {
+        self.employeeType = employeeType
+        employeeTypeLabel.textColor = .black
+        employeeTypeLabel.text = employeeType.description()
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         
+            guard let employeeTypeTableViewController = segue.destination as? EmployeeTypeTableViewController else {return}
+            employeeTypeTableViewController.delegate = self
+        
+    }
     // MARK: - Date Picker Functionality
     
     @IBAction func dateChanged(_ sender: Any) {
