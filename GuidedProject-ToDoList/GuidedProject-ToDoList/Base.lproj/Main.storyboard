@@ -103,9 +103,23 @@
                             <outlet property="delegate" destination="ihi-j0-mUb" id="5Ub-gg-hP2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="New Stuff To Do " largeTitleDisplayMode="never" id="xbJ-qz-qL1"/>
+                    <navigationItem key="navigationItem" title="New Stuff To Do " largeTitleDisplayMode="never" id="xbJ-qz-qL1">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="mPt-jC-DnD">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <segue destination="una-pS-OGR" kind="unwind" unwindAction="unwindToDoStuffListWithSegue:" id="C20-e3-gt0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="HvJ-Di-sTF">
+                            <color key="tintColor" systemColor="systemOrangeColor"/>
+                            <connections>
+                                <segue destination="una-pS-OGR" kind="unwind" identifier="SaveUnwind" unwindAction="unwindToDoStuffListWithSegue:" id="c40-PB-RvM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mGp-CL-WUC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="una-pS-OGR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2445" y="-46"/>
         </scene>
