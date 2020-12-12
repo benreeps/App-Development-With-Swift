@@ -23,6 +23,11 @@ class DetailTableViewController: UITableViewController {
         updateSaveButton()
     }
     
+    @IBAction func textEditingChanged(_ sender: UITextField) {
+        updateSaveButton()
+    }
+    
+    
     func updateSaveButton() {
         let text = titleTextField.text ?? ""
         saveButton.isEnabled = !text.isEmpty
