@@ -214,6 +214,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dueDateLabel" destination="Vd2-lh-um5" id="xfN-pp-Rjs"/>
+                        <outlet property="dueDatePicker" destination="n4n-N8-Vth" id="RQH-aW-8Ml"/>
+                        <outlet property="isCompleteButton" destination="rXR-dF-EsZ" id="i3N-fm-nvL"/>
+                        <outlet property="notesTextView" destination="RZO-QN-4Ei" id="yfQ-YL-Kcl"/>
+                        <outlet property="titleTextField" destination="hej-W9-ktW" id="o9v-Tg-12t"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mGp-CL-WUC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="una-pS-OGR" userLabel="Exit" sceneMemberID="exit"/>
