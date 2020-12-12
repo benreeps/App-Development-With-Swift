@@ -104,6 +104,43 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pqV-4a-cpm" id="IHz-FB-z3k">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rL5-SW-fSL">
+                                                    <rect key="frame" x="20" y="12" width="92" height="20"/>
+                                                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vd2-lh-um5">
+                                                    <rect key="frame" x="127" y="12" width="51.5" height="20"/>
+                                                    <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rL5-SW-fSL" firstAttribute="centerY" secondItem="IHz-FB-z3k" secondAttribute="centerY" id="8ay-gw-gFD"/>
+                                                <constraint firstItem="rL5-SW-fSL" firstAttribute="leading" secondItem="IHz-FB-z3k" secondAttribute="leadingMargin" id="GaZ-62-Q9i"/>
+                                                <constraint firstItem="Vd2-lh-um5" firstAttribute="centerY" secondItem="IHz-FB-z3k" secondAttribute="centerY" id="N5d-lP-Xee"/>
+                                                <constraint firstItem="Vd2-lh-um5" firstAttribute="leading" secondItem="rL5-SW-fSL" secondAttribute="trailing" constant="15" id="Wwi-EG-QVR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Jso-Nt-b8Y">
+                                        <rect key="frame" x="0.0" y="178.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jso-Nt-b8Y" id="Oqc-iD-JK2">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="n4n-N8-Vth">
+                                                    <rect key="frame" x="47" y="-86" width="320" height="216"/>
+                                                </datePicker>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="n4n-N8-Vth" firstAttribute="centerX" secondItem="Oqc-iD-JK2" secondAttribute="centerX" id="HAH-4d-jYa"/>
+                                                <constraint firstItem="n4n-N8-Vth" firstAttribute="centerY" secondItem="Oqc-iD-JK2" secondAttribute="centerY" id="tpW-2H-wUz"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -111,7 +148,7 @@
                             <tableViewSection id="cgI-1c-q4I">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="yUa-hP-eyf">
-                                        <rect key="frame" x="0.0" y="214.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="258" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yUa-hP-eyf" id="dvS-hQ-lS3">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
