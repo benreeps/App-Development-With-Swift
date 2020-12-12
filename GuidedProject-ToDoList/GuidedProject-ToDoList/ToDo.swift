@@ -14,6 +14,10 @@ struct ToDo {
     var notes: String?
     
     static func loadToDos() -> [ToDo]? {
-        return nil 
+        return nil
+    }
+    static func loadSampleToDos() -> [ToDo] {
+        let todo = ToDo(title: "Stuff to do", isComplete: false, dueDate: Date(), notes: "Task details")
+        return [todo]
     }
 }

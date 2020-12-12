@@ -12,7 +12,16 @@ class ToDoTableViewController: UITableViewController {
     
     var todos = [ToDo]()
     
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if let savedToDos = ToDo.loadToDos() {
+            todos = savedToDos
+        } else {
+            let sampleToDos = ToDo.loadSampleToDos()
+            todos = sampleToDos
+        }
+    }
     
     
     // MARK:- TableView Data
