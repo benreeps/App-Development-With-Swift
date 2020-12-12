@@ -15,10 +15,17 @@ class DetailTableViewController: UITableViewController {
     @IBOutlet weak var dueDateLabel: UILabel!
     @IBOutlet weak var dueDatePicker: UIDatePicker!
     @IBOutlet weak var notesTextView: UITextView!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateSaveButton()
+    }
+    
+    func updateSaveButton() {
+        let text = titleTextField.text ?? ""
+        saveButton.isEnabled = !text.isEmpty
     }
     
 }
