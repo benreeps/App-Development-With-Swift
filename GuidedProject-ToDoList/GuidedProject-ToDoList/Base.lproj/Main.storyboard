@@ -71,7 +71,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hej-W9-ktW">
-                                                    <rect key="frame" x="58" y="11.5" width="336" height="21"/>
+                                                    <rect key="frame" x="60" y="11.5" width="334" height="21"/>
                                                     <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
@@ -80,21 +80,25 @@
                                                     </connections>
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXR-dF-EsZ">
-                                                    <rect key="frame" x="20" y="7" width="30" height="30"/>
+                                                    <rect key="frame" x="20" y="4" width="36" height="36"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="30" id="MGj-VV-xGM"/>
-                                                        <constraint firstAttribute="height" constant="30" id="vVf-9D-kfF"/>
+                                                        <constraint firstAttribute="width" constant="36" id="MGj-VV-xGM"/>
+                                                        <constraint firstAttribute="height" constant="36" id="vVf-9D-kfF"/>
                                                     </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="tintColor" systemColor="systemOrangeColor"/>
-                                                    <state key="normal" title="Button" image="circle.fill" catalog="system"/>
+                                                    <state key="normal" image="circle.fill" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="isCompleteButtonTapped:" destination="ihi-j0-mUb" eventType="touchUpInside" id="Ldr-h3-txk"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="rXR-dF-EsZ" firstAttribute="centerY" secondItem="gob-hZ-aLd" secondAttribute="centerY" id="Dem-rZ-XKu"/>
                                                 <constraint firstItem="hej-W9-ktW" firstAttribute="centerY" secondItem="gob-hZ-aLd" secondAttribute="centerY" id="Grc-hv-QlX"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="hej-W9-ktW" secondAttribute="trailing" id="O9Z-lV-4Sw"/>
                                                 <constraint firstItem="rXR-dF-EsZ" firstAttribute="leading" secondItem="gob-hZ-aLd" secondAttribute="leadingMargin" id="Wiv-vO-W8W"/>
-                                                <constraint firstItem="hej-W9-ktW" firstAttribute="leading" secondItem="rXR-dF-EsZ" secondAttribute="trailing" constant="8" id="yck-Re-HwZ"/>
+                                                <constraint firstItem="rXR-dF-EsZ" firstAttribute="centerY" secondItem="gob-hZ-aLd" secondAttribute="centerY" id="mU2-VU-3Ch"/>
+                                                <constraint firstItem="hej-W9-ktW" firstAttribute="leading" secondItem="rXR-dF-EsZ" secondAttribute="trailing" constant="4" id="yck-Re-HwZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

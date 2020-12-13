@@ -23,6 +23,15 @@ class DetailTableViewController: UITableViewController {
         updateSaveButton()
     }
     
+    @IBAction func isCompleteButtonTapped(_ sender: UIButton) {
+        isCompleteButton.isSelected = !isCompleteButton.isSelected
+        
+        if isCompleteButton.isSelected {
+            isCompleteButton.tintColor = .systemOrange
+        } else {
+            isCompleteButton.tintColor = .systemGreen
+        }
+    }
     
     @IBAction func returnPressed(_ sender: UITextField) {
         // Ensures that the keyboard will dissapear when the user presses the return key after typing
