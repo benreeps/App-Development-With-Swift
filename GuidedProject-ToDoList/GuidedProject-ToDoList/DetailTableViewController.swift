@@ -21,6 +21,7 @@ class DetailTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateSaveButton()
+        updateDueDateLabel(date: dueDatePicker.date)
     }
     
     @IBAction func isCompleteButtonTapped(_ sender: UIButton) {
@@ -47,6 +48,13 @@ class DetailTableViewController: UITableViewController {
     func updateSaveButton() {
         let text = titleTextField.text ?? ""
         saveButton.isEnabled = !text.isEmpty
+    }
+    
+    @IBAction func dueDatePickerChanged(_ sender: UIDatePicker) {
+        updateDueDateLabel(date: dueDatePicker.date)
+    }
+    func updateDueDateLabel(date: Date) {
+        dueDateLabel.text = ToDo.dueDateFormatter.string(from: date)
     }
     
 }

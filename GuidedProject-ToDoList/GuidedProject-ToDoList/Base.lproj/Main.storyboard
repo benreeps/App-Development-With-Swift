@@ -143,6 +143,9 @@
                                             <subviews>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="n4n-N8-Vth">
                                                     <rect key="frame" x="47" y="-86" width="320" height="216"/>
+                                                    <connections>
+                                                        <action selector="dueDatePickerChanged:" destination="ihi-j0-mUb" eventType="primaryActionTriggered" id="FBd-Ba-OjZ"/>
+                                                    </connections>
                                                 </datePicker>
                                             </subviews>
                                             <constraints>
@@ -198,7 +201,7 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="RZO-QN-4Ei" secondAttribute="trailing" id="uzx-GO-uLc"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
