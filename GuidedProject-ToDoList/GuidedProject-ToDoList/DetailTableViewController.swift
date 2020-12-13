@@ -23,10 +23,17 @@ class DetailTableViewController: UITableViewController {
         updateSaveButton()
     }
     
-    @IBAction func textEditingChanged(_ sender: UITextField) {
-        updateSaveButton()
+    
+    @IBAction func returnPressed(_ sender: UITextField) {
+        // Ensures that the keyboard will dissapear when the user presses the return key after typing
+        titleTextField.resignFirstResponder()
     }
     
+    
+    @IBAction func textEditingChanged(_ sender: UITextField) {
+        // Ensures that save button state is updated when text for the title is changed
+        updateSaveButton()
+    }
     
     func updateSaveButton() {
         let text = titleTextField.text ?? ""

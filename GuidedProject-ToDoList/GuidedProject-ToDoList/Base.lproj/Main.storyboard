@@ -75,6 +75,7 @@
                                                     <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
+                                                        <action selector="returnPressed:" destination="ihi-j0-mUb" eventType="primaryActionTriggered" id="2Tm-4I-d6V"/>
                                                         <action selector="textEditingChanged:" destination="ihi-j0-mUb" eventType="editingChanged" id="hQn-Nq-SDy"/>
                                                     </connections>
                                                 </textField>
