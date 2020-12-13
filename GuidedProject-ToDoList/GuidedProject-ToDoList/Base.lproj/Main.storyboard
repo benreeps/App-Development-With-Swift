@@ -177,7 +177,7 @@
                                                 <constraint firstItem="qt4-8M-BUb" firstAttribute="leading" secondItem="dvS-hQ-lS3" secondAttribute="leadingMargin" id="xtG-zN-EDM"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="200" id="iLz-ve-ikX">
                                         <rect key="frame" x="0.0" y="264.5" width="414" height="200"/>

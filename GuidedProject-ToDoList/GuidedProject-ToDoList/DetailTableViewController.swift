@@ -22,6 +22,8 @@ class DetailTableViewController: UITableViewController {
         super.viewDidLoad()
         updateSaveButton()
         updateDueDateLabel(date: dueDatePicker.date)
+        // Make initial date for the date picker 24hrs from the present
+        dueDatePicker.date = Date.init(timeIntervalSinceNow: 24*60*60)
     }
     
     @IBAction func isCompleteButtonTapped(_ sender: UIButton) {
