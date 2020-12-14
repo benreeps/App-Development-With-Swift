@@ -17,6 +17,13 @@ class DetailTableViewController: UITableViewController {
     @IBOutlet weak var notesTextView: UITextView!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
+    var isEditingDate = false {
+        didSet {
+            dueDatePicker.isHidden = !isEditingDate
+            tableView.beginUpdates()
+            tableView.endUpdates()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +64,40 @@ class DetailTableViewController: UITableViewController {
     }
     func updateDueDateLabel(date: Date) {
         dueDateLabel.text = ToDo.dueDateFormatter.string(from: date)
+    }
+    // MARK:- TableView Delegates
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let normalCellHeight = CGFloat(44)
+        let largeCellHeight = CGFloat(200)
+        
+        switch(indexPath) {
+        case[1,1]:
+            return isEditingDate ?  largeCellHeight : 0
+        
+        case[2,1]:
+            return largeCellHeight
+            
+        default: return normalCellHeight
+        
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        switch (indexPath) {
+        case [1,0]:
+            isEditingDate = !isEditingDate
+            
+            dueDateLabel.textColor = isEditingDate ? .black : tableView.tintColor
+            
+          
+            
+        default:
+            break
+        }
+        
     }
     
 }
