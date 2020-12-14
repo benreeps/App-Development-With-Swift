@@ -14,12 +14,20 @@ class DetailTableViewController: UITableViewController {
     @IBOutlet weak var isCompleteButton: UIButton!
     @IBOutlet weak var dueDateLabel: UILabel!
     @IBOutlet weak var dueDatePicker: UIDatePicker!
+    @IBOutlet weak var notesLabel: UILabel!
     @IBOutlet weak var notesTextView: UITextView!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
     var isEditingDate = false {
         didSet {
             dueDatePicker.isHidden = !isEditingDate
+            tableView.beginUpdates()
+            tableView.endUpdates()
+        }
+    }
+    var isEditingNotes = false {
+        didSet {
+            notesTextView.isHidden = !isEditingNotes
             tableView.beginUpdates()
             tableView.endUpdates()
         }
@@ -76,7 +84,7 @@ class DetailTableViewController: UITableViewController {
             return isEditingDate ?  largeCellHeight : 0
         
         case[2,1]:
-            return largeCellHeight
+            return isEditingNotes ? largeCellHeight : 0
             
         default: return normalCellHeight
         
@@ -92,8 +100,10 @@ class DetailTableViewController: UITableViewController {
             
             dueDateLabel.textColor = isEditingDate ? .black : tableView.tintColor
             
-          
-            
+        case [2,0]:
+            isEditingNotes = !isEditingNotes
+            // When cell is tapped the desired text view will be displayed and assigned to be first responder with blinking cursor. 
+            notesTextView.becomeFirstResponder()
         default:
             break
         }

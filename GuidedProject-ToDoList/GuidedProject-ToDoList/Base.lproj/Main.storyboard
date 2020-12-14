@@ -229,6 +229,7 @@
                         <outlet property="dueDateLabel" destination="Vd2-lh-um5" id="xfN-pp-Rjs"/>
                         <outlet property="dueDatePicker" destination="n4n-N8-Vth" id="RQH-aW-8Ml"/>
                         <outlet property="isCompleteButton" destination="rXR-dF-EsZ" id="i3N-fm-nvL"/>
+                        <outlet property="notesLabel" destination="qt4-8M-BUb" id="bYg-DQ-iZB"/>
                         <outlet property="notesTextView" destination="RZO-QN-4Ei" id="yfQ-YL-Kcl"/>
                         <outlet property="saveButton" destination="HvJ-Di-sTF" id="yLz-Kx-otf"/>
                         <outlet property="titleTextField" destination="hej-W9-ktW" id="o9v-Tg-12t"/>
