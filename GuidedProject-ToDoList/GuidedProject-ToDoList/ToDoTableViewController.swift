@@ -67,4 +67,13 @@ class ToDoTableViewController: UITableViewController {
             tableView.insertRows(at: [newIndexPath], with: .automatic)
         }
     }
+    // retrieves info from selected cell in the todo list and sends the information to the detailtbc 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetails" {
+            let detailTableViewController = segue.destination as! DetailTableViewController
+            let indexPath = tableView.indexPathForSelectedRow!
+            let selectedToDo = todos[indexPath.row]
+            detailTableViewController.todo = selectedToDo
+        }
+    }
 }

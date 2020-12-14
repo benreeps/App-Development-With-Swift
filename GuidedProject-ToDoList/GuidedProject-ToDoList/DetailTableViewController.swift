@@ -41,10 +41,18 @@ class DetailTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let todo = todo {
+            navigationItem.title = "New Stuff To Do"
+            titleTextField.text = todo.title
+            dueDatePicker.date = todo.dueDate
+            isCompleteButton.isSelected = todo.isComplete
+            notesTextView.text = todo.notes
+        } else {
+            // Make initial date for the date picker 24hrs from the present
+            dueDatePicker.date = Date.init(timeIntervalSinceNow: 24*60*60)
+        }
         updateSaveButton()
         updateDueDateLabel(date: dueDatePicker.date)
-        // Make initial date for the date picker 24hrs from the present
-        dueDatePicker.date = Date.init(timeIntervalSinceNow: 24*60*60)
     }
     
     @IBAction func isCompleteButtonTapped(_ sender: UIButton) {
