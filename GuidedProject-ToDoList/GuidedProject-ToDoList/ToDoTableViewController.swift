@@ -61,10 +61,16 @@ class ToDoTableViewController: UITableViewController {
         let sourceViewController = segue.source as! DetailTableViewController
         
         if let todo = sourceViewController.todo {
+            // This if statement checks to see if you had previously selected a todo list item to edit or if you had previously selected the + bar button item to create a new list item. If you are editing an item in a previously selected row this statement will apply your edits to that row rather than create a new entry. 
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                todos[selectedIndexPath.row] = todo
+                tableView.reloadRows(at: [selectedIndexPath], with: .none)
+            } else {
             let newIndexPath = IndexPath(row: todos.count, section: 0)
             
             todos.append(todo)
             tableView.insertRows(at: [newIndexPath], with: .automatic)
+            }
         }
     }
     // retrieves info from selected cell in the todo list and sends the information to the detailtbc 
