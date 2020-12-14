@@ -54,7 +54,17 @@ class ToDoTableViewController: UITableViewController {
     }
     // MARK:- Segue Configuration
     
+    // retrieves info from todo created in editor, assigns it to be a todo in todos, creates a new cell for todo
     @IBAction func unwindToDoStuffList(segue: UIStoryboardSegue) {
+        guard segue.identifier == "SaveUnwind" else {return}
         
+        let sourceViewController = segue.source as! DetailTableViewController
+        
+        if let todo = sourceViewController.todo {
+            let newIndexPath = IndexPath(row: todos.count, section: 0)
+            
+            todos.append(todo)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
     }
 }

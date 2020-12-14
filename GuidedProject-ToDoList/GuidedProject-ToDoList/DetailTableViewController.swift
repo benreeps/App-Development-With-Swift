@@ -36,6 +36,8 @@ class DetailTableViewController: UITableViewController {
             tableView.endUpdates()
         }
     }
+    // “Since the static table view controller will deal with one model at a time, you'll add an optional model property to the class definition. (It's optional because the property will be nil until the Save button is tapped and the property can be given a value.)”
+    var todo: ToDo?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -112,6 +114,19 @@ class DetailTableViewController: UITableViewController {
             break
         }
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        guard segue.identifier == "SaveUnwind" else {return}
+        // titleTextField.text needs to be unwrapped because the title property for a ToDo is not optional
+        let title = titleTextField.text!
+        let isComplete = isCompleteButton.isSelected
+        let date = dueDatePicker.date
+        let notes = notesTextView.text
+        
+        todo = ToDo(title: title, isComplete: isComplete, dueDate: date, notes: notes)
     }
     
 }
