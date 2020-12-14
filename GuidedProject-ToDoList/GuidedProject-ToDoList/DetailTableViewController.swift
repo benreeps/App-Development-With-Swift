@@ -27,7 +27,11 @@ class DetailTableViewController: UITableViewController {
     }
     var isEditingNotes = false {
         didSet {
-            notesTextView.isHidden = !isEditingNotes
+            if !isEditingNotes {
+            notesTextView.becomeFirstResponder()
+            } else {
+                notesTextView.resignFirstResponder()
+            }
             tableView.beginUpdates()
             tableView.endUpdates()
         }
@@ -84,7 +88,7 @@ class DetailTableViewController: UITableViewController {
             return isEditingDate ?  largeCellHeight : 0
         
         case[2,1]:
-            return isEditingNotes ? largeCellHeight : 0
+            return largeCellHeight 
             
         default: return normalCellHeight
         
@@ -102,8 +106,8 @@ class DetailTableViewController: UITableViewController {
             
         case [2,0]:
             isEditingNotes = !isEditingNotes
-            // When cell is tapped the desired text view will be displayed and assigned to be first responder with blinking cursor. 
-            notesTextView.becomeFirstResponder()
+            // When cell is tapped the desired text view will be displayed and assigned to be first responder with blinking cursor.
+            
         default:
             break
         }

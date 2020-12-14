@@ -186,19 +186,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="RZO-QN-4Ei">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vLc-yF-maG">
                                                     <rect key="frame" x="20" y="11" width="374" height="178"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <color key="textColor" systemColor="labelColor"/>
                                                     <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="RZO-QN-4Ei" firstAttribute="leading" secondItem="yQJ-qH-1ei" secondAttribute="leadingMargin" id="S27-eh-gnn"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="RZO-QN-4Ei" secondAttribute="bottom" id="j98-pt-9ft"/>
-                                                <constraint firstItem="RZO-QN-4Ei" firstAttribute="top" secondItem="yQJ-qH-1ei" secondAttribute="topMargin" id="o6c-zC-icB"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="RZO-QN-4Ei" secondAttribute="trailing" id="uzx-GO-uLc"/>
+                                                <constraint firstItem="vLc-yF-maG" firstAttribute="top" secondItem="yQJ-qH-1ei" secondAttribute="topMargin" id="EFA-IE-yrp"/>
+                                                <constraint firstItem="vLc-yF-maG" firstAttribute="leading" secondItem="yQJ-qH-1ei" secondAttribute="leadingMargin" id="QHg-mw-P8u"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="vLc-yF-maG" secondAttribute="trailing" id="eNE-Ix-qKj"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="vLc-yF-maG" secondAttribute="bottom" id="yeU-e2-Cam"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -230,7 +230,7 @@
                         <outlet property="dueDatePicker" destination="n4n-N8-Vth" id="RQH-aW-8Ml"/>
                         <outlet property="isCompleteButton" destination="rXR-dF-EsZ" id="i3N-fm-nvL"/>
                         <outlet property="notesLabel" destination="qt4-8M-BUb" id="bYg-DQ-iZB"/>
-                        <outlet property="notesTextView" destination="RZO-QN-4Ei" id="yfQ-YL-Kcl"/>
+                        <outlet property="notesTextView" destination="vLc-yF-maG" id="1Um-ME-izf"/>
                         <outlet property="saveButton" destination="HvJ-Di-sTF" id="yLz-Kx-otf"/>
                         <outlet property="titleTextField" destination="hej-W9-ktW" id="o9v-Tg-12t"/>
                     </connections>
