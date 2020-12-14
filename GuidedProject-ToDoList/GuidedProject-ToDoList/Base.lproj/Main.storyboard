@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoCell" textLabel="ufa-cW-s4p" style="IBUITableViewCellStyleDefault" id="iyN-h4-yuS">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoCell" textLabel="ufa-cW-s4p" style="IBUITableViewCellStyleDefault" id="iyN-h4-yuS" customClass="ToDoCell" customModule="GuidedProject_ToDoList" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iyN-h4-yuS" id="DSY-Id-3dC">
@@ -90,7 +90,7 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="tintColor" systemColor="systemOrangeColor"/>
-                                                    <state key="normal" image="circle.fill" catalog="system"/>
+                                                    <state key="normal" image="icons8-tag-window-96 (3)"/>
                                                     <connections>
                                                         <action selector="isCompleteButtonTapped:" destination="ihi-j0-mUb" eventType="touchUpInside" id="Ldr-h3-txk"/>
                                                     </connections>
@@ -282,7 +282,7 @@
         <segue reference="7bJ-by-bHg"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="circle.fill" catalog="system" width="128" height="121"/>
+        <image name="icons8-tag-window-96 (3)" width="96" height="96"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

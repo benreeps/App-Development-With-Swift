@@ -41,6 +41,7 @@ class DetailTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         if let todo = todo {
             navigationItem.title = "New Stuff To Do"
             titleTextField.text = todo.title
@@ -56,12 +57,15 @@ class DetailTableViewController: UITableViewController {
     }
     
     @IBAction func isCompleteButtonTapped(_ sender: UIButton) {
+        let orangeTag = UIImage(named: "icons8-tag-window-96 (3)")
+        let greenTag = UIImage(named: "icons8-tag-window-96 (5)")
+        
         isCompleteButton.isSelected = !isCompleteButton.isSelected
         
         if isCompleteButton.isSelected {
-            isCompleteButton.tintColor = .systemOrange
+            isCompleteButton.setImage(greenTag, for: .normal)
         } else {
-            isCompleteButton.tintColor = .systemGreen
+            isCompleteButton.setImage(orangeTag, for: .normal)
         }
     }
     
