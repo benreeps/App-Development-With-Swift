@@ -45,11 +45,22 @@ class DetailTableViewController: UITableViewController {
         super.viewDidLoad()
         
         if let todo = todo {
+            let orangeTag = UIImage(named: "icons8-tag-window-96 (3)")
+            let greenTag = UIImage(named: "icons8-tag-window-96 (5)")
+            
             navigationItem.title = "New Stuff To Do"
             titleTextField.text = todo.title
             dueDatePicker.date = todo.dueDate
             isCompleteButton.isSelected = todo.isComplete
             notesTextView.text = todo.notes
+            
+            if todo.isComplete {
+                isCompleteButton.setImage(greenTag, for: .normal)
+            } else {
+                isCompleteButton.setImage(orangeTag, for: .normal)
+            }
+            
+            
         } else {
             // Make initial date for the date picker 24hrs from the present
             dueDatePicker.date = Date.init(timeIntervalSinceNow: 24*60*60)
