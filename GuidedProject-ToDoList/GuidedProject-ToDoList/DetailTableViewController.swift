@@ -10,6 +10,8 @@ import UIKit
 
 class DetailTableViewController: UITableViewController {
     
+    
+    
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var isCompleteButton: UIButton!
     @IBOutlet weak var dueDateLabel: UILabel!
@@ -91,6 +93,7 @@ class DetailTableViewController: UITableViewController {
     func updateDueDateLabel(date: Date) {
         dueDateLabel.text = ToDo.dueDateFormatter.string(from: date)
     }
+   
     // MARK:- TableView Delegates
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

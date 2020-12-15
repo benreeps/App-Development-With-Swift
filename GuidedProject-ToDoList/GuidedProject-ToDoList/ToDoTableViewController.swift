@@ -8,7 +8,24 @@
 import Foundation
 import UIKit
 
-class ToDoTableViewController: UITableViewController {
+class ToDoTableViewController: UITableViewController, ToDoCellDelegate {
+    
+   // Protocol method
+    func tagTapped(sender: ToDoCell) {
+        if let indexPath = tableView.indexPath(for: sender) {
+       
+            
+            var todo = todos[indexPath.row]
+            todo.isComplete = !todo.isComplete
+           
+            
+            todos[indexPath.row] = todo
+            tableView.reloadRows(at: [indexPath], with: .automatic)
+        }
+        
+    }
+   
+    
     
     var todos = [ToDo]()
     
@@ -27,18 +44,21 @@ class ToDoTableViewController: UITableViewController {
     }
     
     
-    // MARK:- TableView Data
+    // MARK:- TableView Delegates
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return todos.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell") else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell") as? ToDoCell else {
             fatalError("Could not dequeue cell")
         }
         let todo = todos[indexPath.row]
-        cell.textLabel?.text = todo.title
+        cell.titleLabel.text = todo.title
+        cell.isCompleteButton.isSelected = todo.isComplete
+        
+        cell.delegate = self
         return cell 
     }
     
