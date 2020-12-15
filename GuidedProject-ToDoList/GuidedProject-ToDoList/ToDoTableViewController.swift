@@ -8,7 +8,21 @@
 import Foundation
 import UIKit
 
-class ToDoTableViewController: UITableViewController {
+class ToDoTableViewController: UITableViewController, ToDoCellDelegate {
+    
+   // Protocol method
+    func tagTapped(sender: ToDoCell) {
+        if let indexPath = tableView.indexPath(for: sender) {
+            var todo = todos[indexPath.row]
+            todo.isComplete = !todo.isComplete
+            todos[indexPath.row] = todo
+            tableView.reloadRows(at: [indexPath], with: .automatic)
+            ToDo.saveToDos(todos)
+        }
+        
+    }
+   
+    
     
     var todos = [ToDo]()
     
@@ -23,21 +37,34 @@ class ToDoTableViewController: UITableViewController {
             let sampleToDos = ToDo.loadSampleToDos()
             todos = sampleToDos
         }
+        
     }
     
     
-    // MARK:- TableView Data
+    // MARK:- TableView Delegates
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return todos.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell") else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell") as? ToDoCell else {
             fatalError("Could not dequeue cell")
         }
         let todo = todos[indexPath.row]
-        cell.textLabel?.text = todo.title
+        let orangeTag = UIImage(named: "icons8-tag-window-96 (3)")
+        let greenTag = UIImage(named: "icons8-tag-window-96 (5)")
+        
+        cell.titleLabel.text = todo.title
+        cell.isCompleteButton.isSelected = todo.isComplete
+        
+        if todo.isComplete {
+            cell.isCompleteButton.setImage(greenTag, for: .normal)
+        } else {
+            cell.isCompleteButton.setImage(orangeTag, for: .normal)
+        }
+        
+        cell.delegate = self
         return cell 
     }
     
@@ -49,11 +76,38 @@ class ToDoTableViewController: UITableViewController {
         if editingStyle == .delete {
             todos.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+            ToDo.saveToDos(todos)
         }
     }
     // MARK:- Segue Configuration
     
+    // retrieves info from todo created in editor, assigns it to be a todo in todos, creates a new cell for todo
     @IBAction func unwindToDoStuffList(segue: UIStoryboardSegue) {
+        guard segue.identifier == "SaveUnwind" else {return}
         
+        let sourceViewController = segue.source as! DetailTableViewController
+        
+        if let todo = sourceViewController.todo {
+            // This if statement checks to see if you had previously selected a todo list item to edit or if you had previously selected the + bar button item to create a new list item. If you are editing an item in a previously selected row this statement will apply your edits to that row rather than create a new entry. 
+            if let selectedIndexPath = tableView.indexPathForSelectedRow {
+                todos[selectedIndexPath.row] = todo
+                tableView.reloadRows(at: [selectedIndexPath], with: .none)
+            } else {
+            let newIndexPath = IndexPath(row: todos.count, section: 0)
+            
+            todos.append(todo)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+            }
+        }
+        ToDo.saveToDos(todos)
+    }
+    // retrieves info from selected cell in the todo list and sends the information to the detailtbc 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetails" {
+            let detailTableViewController = segue.destination as! DetailTableViewController
+            let indexPath = tableView.indexPathForSelectedRow!
+            let selectedToDo = todos[indexPath.row]
+            detailTableViewController.todo = selectedToDo
+        }
     }
 }

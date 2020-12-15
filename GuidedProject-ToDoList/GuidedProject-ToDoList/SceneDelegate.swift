@@ -13,8 +13,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
+        // Set Navigation bar title font to Courier New
+        let attributes = [
+            NSAttributedString.Key.font: UIFont(name: "Menlo Bold", size: 17),
+            NSAttributedString.Key.foregroundColor: UIColor(red: (255.0), green: (127.0), blue: (211.0), alpha: 1.0)
+            
+        ]
+        UINavigationBar.appearance().titleTextAttributes = attributes
+        UINavigationBar.appearance().largeTitleTextAttributes = attributes
+
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
     }
@@ -26,6 +33,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
     }
 
+    
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.

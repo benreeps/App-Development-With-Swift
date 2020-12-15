@@ -1,2 +1,50 @@
-.DS_Store
-GuidedProject-ToDoList.xcodeproj/project.xcworkspace/xcuserdata/
+# Xcode
+
+## User settings
+xcuserdata/
+
+## IOS 
+*.DS_Store
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+Packages/
+ Package.pins
+ Package.resolved
+ *.xcodeproj
+.swiftpm
+.build/
+
+
+# Xcode workspace
+*.xcworkspace
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build/
+
+# Accio dependency management
+Dependencies/
+.accio/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+iOSInjectionProject/

@@ -10,29 +10,75 @@ import UIKit
 
 class DetailTableViewController: UITableViewController {
     
+    
+    
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var isCompleteButton: UIButton!
     @IBOutlet weak var dueDateLabel: UILabel!
     @IBOutlet weak var dueDatePicker: UIDatePicker!
+    @IBOutlet weak var notesLabel: UILabel!
     @IBOutlet weak var notesTextView: UITextView!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
+    var isEditingDate = false {
+        didSet {
+            dueDatePicker.isHidden = !isEditingDate
+            tableView.beginUpdates()
+            tableView.endUpdates()
+        }
+    }
+    var isEditingNotes = false {
+        didSet {
+            if !isEditingNotes {
+            notesTextView.becomeFirstResponder()
+            } else {
+                notesTextView.resignFirstResponder()
+            }
+            tableView.beginUpdates()
+            tableView.endUpdates()
+        }
+    }
+    // “Since the static table view controller will deal with one model at a time, you'll add an optional model property to the class definition. (It's optional because the property will be nil until the Save button is tapped and the property can be given a value.)”
+    var todo: ToDo?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let todo = todo {
+            let orangeTag = UIImage(named: "icons8-tag-window-96 (3)")
+            let greenTag = UIImage(named: "icons8-tag-window-96 (5)")
+            
+            navigationItem.title = "New Stuff To Do"
+            titleTextField.text = todo.title
+            dueDatePicker.date = todo.dueDate
+            isCompleteButton.isSelected = todo.isComplete
+            notesTextView.text = todo.notes
+            
+            if todo.isComplete {
+                isCompleteButton.setImage(greenTag, for: .normal)
+            } else {
+                isCompleteButton.setImage(orangeTag, for: .normal)
+            }
+            
+            
+        } else {
+            // Make initial date for the date picker 24hrs from the present
+            dueDatePicker.date = Date.init(timeIntervalSinceNow: 24*60*60)
+        }
         updateSaveButton()
         updateDueDateLabel(date: dueDatePicker.date)
-        // Make initial date for the date picker 24hrs from the present
-        dueDatePicker.date = Date.init(timeIntervalSinceNow: 24*60*60)
     }
     
     @IBAction func isCompleteButtonTapped(_ sender: UIButton) {
+        let orangeTag = UIImage(named: "icons8-tag-window-96 (3)")
+        let greenTag = UIImage(named: "icons8-tag-window-96 (5)")
+        
         isCompleteButton.isSelected = !isCompleteButton.isSelected
         
         if isCompleteButton.isSelected {
-            isCompleteButton.tintColor = .systemOrange
+            isCompleteButton.setImage(greenTag, for: .normal)
         } else {
-            isCompleteButton.tintColor = .systemGreen
+            isCompleteButton.setImage(orangeTag, for: .normal)
         }
     }
     
@@ -57,6 +103,56 @@ class DetailTableViewController: UITableViewController {
     }
     func updateDueDateLabel(date: Date) {
         dueDateLabel.text = ToDo.dueDateFormatter.string(from: date)
+    }
+   
+    // MARK:- TableView Delegates
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let normalCellHeight = CGFloat(44)
+        let largeCellHeight = CGFloat(200)
+        
+        switch(indexPath) {
+        case[1,1]:
+            return isEditingDate ?  largeCellHeight : 0
+        
+        case[2,1]:
+            return largeCellHeight 
+            
+        default: return normalCellHeight
+        
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        switch (indexPath) {
+        case [1,0]:
+            isEditingDate = !isEditingDate
+            
+            dueDateLabel.textColor = isEditingDate ? .black : tableView.tintColor
+            
+        case [2,0]:
+            isEditingNotes = !isEditingNotes
+            // When cell is tapped the desired text view will be displayed and assigned to be first responder with blinking cursor.
+            
+        default:
+            break
+        }
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        guard segue.identifier == "SaveUnwind" else {return}
+        // titleTextField.text needs to be unwrapped because the title property for a ToDo is not optional
+        let title = titleTextField.text!
+        let isComplete = isCompleteButton.isSelected
+        let date = dueDatePicker.date
+        let notes = notesTextView.text
+        
+        todo = ToDo(title: title, isComplete: isComplete, dueDate: date, notes: notes)
     }
     
 }
