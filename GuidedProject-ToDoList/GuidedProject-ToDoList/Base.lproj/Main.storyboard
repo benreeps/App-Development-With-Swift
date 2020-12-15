@@ -7,24 +7,25 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Do Stuff-->
+        <!--     // To-Do -->
         <scene sceneID="3ty-jF-qdJ">
             <objects>
                 <tableViewController id="1sP-49-JCG" customClass="ToDoTableViewController" customModule="GuidedProject_ToDoList" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yJG-Jv-hVb">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="35" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yJG-Jv-hVb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.16294425730000001" green="0.16287705299999999" blue="0.1866298616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="systemGray5Color"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToDoCell" id="iyN-h4-yuS" customClass="ToDoCell" customModule="GuidedProject_ToDoList" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="ToDoCell" rowHeight="35" id="iyN-h4-yuS" customClass="ToDoCell" customModule="GuidedProject_ToDoList" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="35"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iyN-h4-yuS" id="DSY-Id-3dC">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="35"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaN-wN-1nY">
-                                            <rect key="frame" x="0.0" y="4" width="36" height="36"/>
+                                            <rect key="frame" x="0.0" y="-0.5" width="36" height="36"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="36" id="N73-6k-gV5"/>
                                                 <constraint firstAttribute="width" constant="36" id="OrP-u5-W4v"/>
@@ -38,20 +39,38 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBk-5W-pLj">
-                                            <rect key="frame" x="44" y="12" width="350" height="20"/>
-                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <rect key="frame" x="95" y="7.5" width="51.5" height="20"/>
+                                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                            <color key="textColor" systemColor="systemTealColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="func" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o71-11-tKl">
+                                            <rect key="frame" x="46" y="7.5" width="41" height="20"/>
+                                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="()" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAb-t7-d5F">
+                                            <rect key="frame" x="148.5" y="7.5" width="20.5" height="20"/>
+                                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
+                                        <constraint firstItem="fAb-t7-d5F" firstAttribute="centerY" secondItem="DSY-Id-3dC" secondAttribute="centerY" id="795-HT-WSr"/>
                                         <constraint firstItem="vaN-wN-1nY" firstAttribute="centerY" secondItem="DSY-Id-3dC" secondAttribute="centerY" id="7b5-eW-9aD"/>
                                         <constraint firstItem="vaN-wN-1nY" firstAttribute="leading" secondItem="DSY-Id-3dC" secondAttribute="leading" id="Cay-Xe-FJn"/>
+                                        <constraint firstItem="o71-11-tKl" firstAttribute="leading" secondItem="vaN-wN-1nY" secondAttribute="trailing" constant="10" id="FhL-aa-IhS"/>
+                                        <constraint firstItem="fAb-t7-d5F" firstAttribute="leading" secondItem="GBk-5W-pLj" secondAttribute="trailing" constant="2" id="FuM-CG-3aD"/>
                                         <constraint firstItem="GBk-5W-pLj" firstAttribute="centerY" secondItem="DSY-Id-3dC" secondAttribute="centerY" id="Pgf-QH-Q4f"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="GBk-5W-pLj" secondAttribute="trailing" id="VQQ-9M-xNi"/>
-                                        <constraint firstItem="GBk-5W-pLj" firstAttribute="leading" secondItem="vaN-wN-1nY" secondAttribute="trailing" constant="8" id="wUk-5w-Wg4"/>
+                                        <constraint firstItem="GBk-5W-pLj" firstAttribute="leading" secondItem="o71-11-tKl" secondAttribute="trailing" constant="8" id="W3o-f0-NcB"/>
+                                        <constraint firstItem="o71-11-tKl" firstAttribute="centerY" secondItem="DSY-Id-3dC" secondAttribute="centerY" id="dAY-Ee-hQD"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="isCompleteButton" destination="vaN-wN-1nY" id="a38-Ah-Soa"/>
                                     <outlet property="titleLabel" destination="GBk-5W-pLj" id="gTr-tJ-bVg"/>
@@ -64,7 +83,7 @@
                             <outlet property="delegate" destination="1sP-49-JCG" id="XnH-Xm-WrK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Do Stuff" largeTitleDisplayMode="always" id="X4z-5G-2LX">
+                    <navigationItem key="navigationItem" title="     // To-Do " largeTitleDisplayMode="always" id="X4z-5G-2LX">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="MjR-dL-avK">
                             <color key="tintColor" systemColor="systemOrangeColor"/>
                             <connections>
@@ -289,6 +308,13 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="HSH-u5-CzP">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="0.5409764051" blue="0.84731429820000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -311,8 +337,14 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

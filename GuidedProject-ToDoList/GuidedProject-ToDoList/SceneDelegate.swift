@@ -15,7 +15,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Set Navigation bar title font to Courier New
         let attributes = [
-            NSAttributedString.Key.font: UIFont(name: "Menlo Bold", size: 17)
+            NSAttributedString.Key.font: UIFont(name: "Menlo Bold", size: 17),
+            NSAttributedString.Key.foregroundColor: UIColor(red: (255.0), green: (127.0), blue: (211.0), alpha: 1.0)
             
         ]
         UINavigationBar.appearance().titleTextAttributes = attributes
