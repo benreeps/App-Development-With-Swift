@@ -45,27 +45,29 @@ class ToDoTableViewController: UITableViewController, ToDoCellDelegate {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return todos.count
+        
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell") as? ToDoCell else {
-            fatalError("Could not dequeue cell")
-        }
-        let todo = todos[indexPath.row]
-        let orangeTag = UIImage(named: "icons8-tag-window-96 (3)")
-        let greenTag = UIImage(named: "icons8-tag-window-96 (5)")
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoCell") as? ToDoCell else { fatalError("Could not dequeue cell")}
+            let todo = todos[indexPath.row]
+            let orangeTag = UIImage(named: "icons8-tag-window-96 (3)")
+            let greenTag = UIImage(named: "icons8-tag-window-96 (5)")
+            let cellNumber: String = String(indexPath.row + 1)
+            
+            cell.toDoNumber.text = cellNumber
+            cell.titleLabel.text = todo.title
+            cell.isCompleteButton.isSelected = todo.isComplete
+            
+            if todo.isComplete {
+                cell.isCompleteButton.setImage(greenTag, for: .normal)
+            } else {
+                cell.isCompleteButton.setImage(orangeTag, for: .normal)
+            }
+            
+            cell.delegate = self
+            return cell
         
-        cell.titleLabel.text = todo.title
-        cell.isCompleteButton.isSelected = todo.isComplete
-        
-        if todo.isComplete {
-            cell.isCompleteButton.setImage(greenTag, for: .normal)
-        } else {
-            cell.isCompleteButton.setImage(orangeTag, for: .normal)
-        }
-        
-        cell.delegate = self
-        return cell 
     }
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -76,6 +78,7 @@ class ToDoTableViewController: UITableViewController, ToDoCellDelegate {
         if editingStyle == .delete {
             todos.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.reloadData()
             ToDo.saveToDos(todos)
         }
     }
