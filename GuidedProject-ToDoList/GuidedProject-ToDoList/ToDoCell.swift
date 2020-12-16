@@ -17,6 +17,7 @@ class ToDoCell: UITableViewCell {
     
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var isCompleteButton: UIButton!
+    @IBOutlet weak var toDoNumber: UILabel!
     
     
     

@@ -38,6 +38,12 @@
                                                 <action selector="isCompleteButtonTapped:" destination="ihi-j0-mUb" eventType="touchUpInside" id="HX5-qn-UGy"/>
                                             </connections>
                                         </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwC-zQ-XFS">
+                                            <rect key="frame" x="8" y="7.5" width="10.5" height="20"/>
+                                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBk-5W-pLj">
                                             <rect key="frame" x="95" y="7.5" width="51.5" height="20"/>
                                             <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
@@ -65,8 +71,10 @@
                                         <constraint firstItem="o71-11-tKl" firstAttribute="leading" secondItem="vaN-wN-1nY" secondAttribute="trailing" constant="10" id="FhL-aa-IhS"/>
                                         <constraint firstItem="fAb-t7-d5F" firstAttribute="leading" secondItem="GBk-5W-pLj" secondAttribute="trailing" constant="2" id="FuM-CG-3aD"/>
                                         <constraint firstItem="GBk-5W-pLj" firstAttribute="centerY" secondItem="DSY-Id-3dC" secondAttribute="centerY" id="Pgf-QH-Q4f"/>
+                                        <constraint firstItem="wwC-zQ-XFS" firstAttribute="leading" secondItem="DSY-Id-3dC" secondAttribute="leading" constant="8" id="QRk-uu-4PB"/>
                                         <constraint firstItem="GBk-5W-pLj" firstAttribute="leading" secondItem="o71-11-tKl" secondAttribute="trailing" constant="8" id="W3o-f0-NcB"/>
                                         <constraint firstItem="o71-11-tKl" firstAttribute="centerY" secondItem="DSY-Id-3dC" secondAttribute="centerY" id="dAY-Ee-hQD"/>
+                                        <constraint firstItem="wwC-zQ-XFS" firstAttribute="centerY" secondItem="DSY-Id-3dC" secondAttribute="centerY" id="yic-mf-TWu"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -74,6 +82,7 @@
                                 <connections>
                                     <outlet property="isCompleteButton" destination="vaN-wN-1nY" id="a38-Ah-Soa"/>
                                     <outlet property="titleLabel" destination="GBk-5W-pLj" id="gTr-tJ-bVg"/>
+                                    <outlet property="toDoNumber" destination="wwC-zQ-XFS" id="lVR-0D-Qh6"/>
                                     <segue destination="ihi-j0-mUb" kind="show" identifier="showDetails" id="7bJ-by-bHg"/>
                                 </connections>
                             </tableViewCell>
