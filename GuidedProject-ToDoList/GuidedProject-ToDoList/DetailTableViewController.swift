@@ -12,7 +12,12 @@ class DetailTableViewController: UITableViewController {
     
     
     
-    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var titleTextField: UITextField! {
+        didSet { let whitePlaceHolder = NSAttributedString(string: "Title", attributes: [NSAttributedString.Key.foregroundColor: UIColor .white])
+            
+            titleTextField.attributedPlaceholder = whitePlaceHolder
+        }
+    }
     @IBOutlet weak var isCompleteButton: UIButton!
     @IBOutlet weak var dueDateLabel: UILabel!
     @IBOutlet weak var dueDatePicker: UIDatePicker!
@@ -67,6 +72,8 @@ class DetailTableViewController: UITableViewController {
         }
         updateSaveButton()
         updateDueDateLabel(date: dueDatePicker.date)
+       
+    
     }
     
     @IBAction func isCompleteButtonTapped(_ sender: UIButton) {
@@ -130,7 +137,7 @@ class DetailTableViewController: UITableViewController {
         case [1,0]:
             isEditingDate = !isEditingDate
             
-            dueDateLabel.textColor = isEditingDate ? .black : tableView.tintColor
+            dueDateLabel.textColor = isEditingDate ? .systemTeal : .white
             
         case [2,0]:
             isEditingNotes = !isEditingNotes
