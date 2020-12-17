@@ -86,6 +86,30 @@
                                     <segue destination="ihi-j0-mUb" kind="show" identifier="showDetails" id="7bJ-by-bHg"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="NumberCell" id="HoV-6T-lSr" customClass="NumberCell" customModule="GuidedProject_ToDoList" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="63" width="414" height="35"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HoV-6T-lSr" id="g5g-UM-bqa">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="35"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zez-Mj-3nX">
+                                            <rect key="frame" x="8" y="7.5" width="10.5" height="20"/>
+                                            <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="zez-Mj-3nX" firstAttribute="centerY" secondItem="g5g-UM-bqa" secondAttribute="centerY" id="9ae-TP-JmK"/>
+                                        <constraint firstItem="zez-Mj-3nX" firstAttribute="leading" secondItem="g5g-UM-bqa" secondAttribute="leading" constant="8" id="Dy9-tA-5MP"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.16294425730000001" green="0.16287705299999999" blue="0.1866298616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="cellNumberLabel" destination="zez-Mj-3nX" id="gH5-5Z-sa3"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="1sP-49-JCG" id="nVf-4D-SWX"/>

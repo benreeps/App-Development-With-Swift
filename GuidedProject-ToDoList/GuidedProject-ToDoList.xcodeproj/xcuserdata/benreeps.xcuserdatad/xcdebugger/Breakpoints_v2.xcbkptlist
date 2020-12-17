@@ -3,4 +3,161 @@
    uuid = "30E20A13-9ADB-43C0-9BF1-F457FC286392"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8AD4AD14-20C5-4F57-B8C0-4EF8CB7418C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GuidedProject-ToDoList/ToDoTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "ToDoTableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "8AD4AD14-20C5-4F57-B8C0-4EF8CB7418C7 - dc6f28f438f41140"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GuidedProject_ToDoList.ToDoTableViewController.__deallocating_deinit"
+                  moduleName = "GuidedProject-ToDoList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benreeps/Documents/XCode/Tutorials:Projects/AppDevWtihSwift/App-Development-With-Swift/GuidedProject-ToDoList/GuidedProject-ToDoList/ToDoTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "8AD4AD14-20C5-4F57-B8C0-4EF8CB7418C7 - ef8fce9f3acd4bc2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GuidedProject_ToDoList.ToDoTableViewController.__allocating_init(style: __C.UITableViewStyle) -&gt; GuidedProject_ToDoList.ToDoTableViewController"
+                  moduleName = "GuidedProject-ToDoList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benreeps/Documents/XCode/Tutorials:Projects/AppDevWtihSwift/App-Development-With-Swift/GuidedProject-ToDoList/GuidedProject-ToDoList/ToDoTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "8AD4AD14-20C5-4F57-B8C0-4EF8CB7418C7 - 9acaf70e447bffa4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GuidedProject_ToDoList.ToDoTableViewController.init(style: __C.UITableViewStyle) -&gt; GuidedProject_ToDoList.ToDoTableViewController"
+                  moduleName = "GuidedProject-ToDoList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benreeps/Documents/XCode/Tutorials:Projects/AppDevWtihSwift/App-Development-With-Swift/GuidedProject-ToDoList/GuidedProject-ToDoList/ToDoTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "101">
+               </Location>
+               <Location
+                  uuid = "8AD4AD14-20C5-4F57-B8C0-4EF8CB7418C7 - 8ae137bfcaeafdfa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GuidedProject_ToDoList.ToDoTableViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; GuidedProject_ToDoList.ToDoTableViewController"
+                  moduleName = "GuidedProject-ToDoList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benreeps/Documents/XCode/Tutorials:Projects/AppDevWtihSwift/App-Development-With-Swift/GuidedProject-ToDoList/GuidedProject-ToDoList/ToDoTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "8AD4AD14-20C5-4F57-B8C0-4EF8CB7418C7 - c0158abd41ccde16"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GuidedProject_ToDoList.ToDoTableViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; GuidedProject_ToDoList.ToDoTableViewController"
+                  moduleName = "GuidedProject-ToDoList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benreeps/Documents/XCode/Tutorials:Projects/AppDevWtihSwift/App-Development-With-Swift/GuidedProject-ToDoList/GuidedProject-ToDoList/ToDoTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "235">
+               </Location>
+               <Location
+                  uuid = "8AD4AD14-20C5-4F57-B8C0-4EF8CB7418C7 - 27ea7f7eb5638c71"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GuidedProject_ToDoList.ToDoTableViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;GuidedProject_ToDoList.ToDoTableViewController&gt;"
+                  moduleName = "GuidedProject-ToDoList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benreeps/Documents/XCode/Tutorials:Projects/AppDevWtihSwift/App-Development-With-Swift/GuidedProject-ToDoList/GuidedProject-ToDoList/ToDoTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "8AD4AD14-20C5-4F57-B8C0-4EF8CB7418C7 - d7d408b838ae44c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GuidedProject_ToDoList.ToDoTableViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;GuidedProject_ToDoList.ToDoTableViewController&gt;"
+                  moduleName = "GuidedProject-ToDoList"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benreeps/Documents/XCode/Tutorials:Projects/AppDevWtihSwift/App-Development-With-Swift/GuidedProject-ToDoList/GuidedProject-ToDoList/ToDoTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "155">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B987C51-5BD4-483E-9FB7-99AF16F1D0EB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GuidedProject-ToDoList/ToDoTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "tagTapped(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D8C8647A-1095-4BEC-ABD1-A6C7394C6A72"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GuidedProject-ToDoList/ToDoTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "tagTapped(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
