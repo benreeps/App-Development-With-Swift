@@ -19,8 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             NSAttributedString.Key.foregroundColor: UIColor(red: (255.0), green: (127.0), blue: (211.0), alpha: 1.0)
             
         ]
-        UINavigationBar.appearance().titleTextAttributes = attributes
-        UINavigationBar.appearance().largeTitleTextAttributes = attributes
+        UINavigationBar.appearance().titleTextAttributes = attributes as [NSAttributedString.Key : Any]
+        UINavigationBar.appearance().largeTitleTextAttributes = attributes as [NSAttributedString.Key : Any]
 
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
