@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--     // To-Do -->
+        <!--// MARK:- ToDo List-->
         <scene sceneID="3ty-jF-qdJ">
             <objects>
                 <tableViewController id="1sP-49-JCG" customClass="ToDoTableViewController" customModule="GuidedProject_ToDoList" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,15 +18,15 @@
                         <color key="tintColor" name="underPageBackgroundColor" catalog="System" colorSpace="catalog"/>
                         <color key="sectionIndexBackgroundColor" red="0.16294425730000001" green="0.16287705299999999" blue="0.1866298616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="ToDoCell" id="iyN-h4-yuS" customClass="ToDoCell" customModule="GuidedProject_ToDoList" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" indentationWidth="10" reuseIdentifier="ToDoCell" rowHeight="35" id="iyN-h4-yuS" customClass="ToDoCell" customModule="GuidedProject_ToDoList" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="35"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iyN-h4-yuS" id="DSY-Id-3dC">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iyN-h4-yuS" id="DSY-Id-3dC">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="35"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaN-wN-1nY">
-                                            <rect key="frame" x="0.0" y="-1.5" width="36" height="36"/>
+                                            <rect key="frame" x="0.0" y="-4.5" width="36" height="36"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="36" id="N73-6k-gV5"/>
                                                 <constraint firstAttribute="width" constant="36" id="OrP-u5-W4v"/>
@@ -40,19 +40,22 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwC-zQ-XFS">
-                                            <rect key="frame" x="8" y="7" width="10.5" height="20"/>
+                                            <rect key="frame" x="8" y="3" width="10.5" height="20"/>
                                             <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lll" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBk-5W-pLj">
-                                            <rect key="frame" x="95" y="7" width="319" height="23"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBk-5W-pLj">
+                                            <rect key="frame" x="95" y="-12" width="319" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="i3h-uA-iDA"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
                                             <color key="textColor" systemColor="systemTealColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="func" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o71-11-tKl">
-                                            <rect key="frame" x="46" y="7" width="41" height="20"/>
+                                            <rect key="frame" x="46" y="3" width="41" height="20"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="41" id="1fy-dM-hJ5"/>
                                                 <constraint firstAttribute="height" constant="20" id="GOE-ru-wiD"/>
@@ -64,16 +67,15 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="GBk-5W-pLj" secondAttribute="bottom" constant="5" id="6ij-HY-gnV"/>
-                                        <constraint firstItem="vaN-wN-1nY" firstAttribute="top" secondItem="DSY-Id-3dC" secondAttribute="centerY" constant="-19" id="7b5-eW-9aD"/>
+                                        <constraint firstItem="vaN-wN-1nY" firstAttribute="top" secondItem="DSY-Id-3dC" secondAttribute="centerY" constant="-22" id="7b5-eW-9aD"/>
                                         <constraint firstItem="vaN-wN-1nY" firstAttribute="leading" secondItem="DSY-Id-3dC" secondAttribute="leading" id="Cay-Xe-FJn"/>
-                                        <constraint firstItem="GBk-5W-pLj" firstAttribute="top" secondItem="DSY-Id-3dC" secondAttribute="centerY" constant="-10.5" id="Faz-8i-277"/>
                                         <constraint firstItem="o71-11-tKl" firstAttribute="leading" secondItem="vaN-wN-1nY" secondAttribute="trailing" constant="10" id="FhL-aa-IhS"/>
                                         <constraint firstItem="wwC-zQ-XFS" firstAttribute="leading" secondItem="DSY-Id-3dC" secondAttribute="leading" constant="8" id="QRk-uu-4PB"/>
                                         <constraint firstItem="GBk-5W-pLj" firstAttribute="leading" secondItem="o71-11-tKl" secondAttribute="trailing" constant="8" id="W3o-f0-NcB"/>
-                                        <constraint firstItem="o71-11-tKl" firstAttribute="top" secondItem="DSY-Id-3dC" secondAttribute="centerY" constant="-10.5" id="dAY-Ee-hQD"/>
+                                        <constraint firstAttribute="bottom" secondItem="GBk-5W-pLj" secondAttribute="bottom" constant="7" id="bgm-jC-Hx9"/>
+                                        <constraint firstItem="o71-11-tKl" firstAttribute="top" secondItem="DSY-Id-3dC" secondAttribute="centerY" constant="-14.5" id="dAY-Ee-hQD"/>
                                         <constraint firstAttribute="trailing" secondItem="GBk-5W-pLj" secondAttribute="trailing" id="xcH-L9-jMT"/>
-                                        <constraint firstItem="wwC-zQ-XFS" firstAttribute="top" secondItem="DSY-Id-3dC" secondAttribute="centerY" constant="-10.5" id="yic-mf-TWu"/>
+                                        <constraint firstItem="wwC-zQ-XFS" firstAttribute="top" secondItem="DSY-Id-3dC" secondAttribute="centerY" constant="-14.5" id="yic-mf-TWu"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -115,7 +117,7 @@
                             <outlet property="delegate" destination="1sP-49-JCG" id="XnH-Xm-WrK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="     // To-Do " largeTitleDisplayMode="always" id="X4z-5G-2LX">
+                    <navigationItem key="navigationItem" title="// MARK:- ToDo List" largeTitleDisplayMode="always" id="X4z-5G-2LX">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="MjR-dL-avK">
                             <color key="tintColor" systemColor="systemOrangeColor"/>
                             <connections>
@@ -128,7 +130,7 @@
             </objects>
             <point key="canvasLocation" x="842.02898550724649" y="-45.535714285714285"/>
         </scene>
-        <!--New Stuff To Do -->
+        <!--// New Task -->
         <scene sceneID="gqj-jK-aiD">
             <objects>
                 <tableViewController id="ihi-j0-mUb" customClass="DetailTableViewController" customModule="GuidedProject_ToDoList" customModuleProvider="target" sceneMemberID="viewController">
@@ -294,7 +296,7 @@
                             <outlet property="delegate" destination="ihi-j0-mUb" id="5Ub-gg-hP2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="New Stuff To Do " largeTitleDisplayMode="never" id="xbJ-qz-qL1">
+                    <navigationItem key="navigationItem" title="// New Task " largeTitleDisplayMode="never" id="xbJ-qz-qL1">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="mPt-jC-DnD">
                             <color key="tintColor" systemColor="systemOrangeColor"/>
                             <connections>
