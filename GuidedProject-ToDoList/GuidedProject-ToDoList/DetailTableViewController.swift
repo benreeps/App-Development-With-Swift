@@ -35,7 +35,7 @@ class DetailTableViewController: UITableViewController {
     var isEditingNotes = false {
         didSet {
             if !isEditingNotes {
-            notesTextView.becomeFirstResponder()
+                notesTextView.becomeFirstResponder()
             } else {
                 notesTextView.resignFirstResponder()
             }
@@ -65,15 +65,12 @@ class DetailTableViewController: UITableViewController {
                 isCompleteButton.setImage(orangeTag, for: .normal)
             }
             
-            
         } else {
             // Make initial date for the date picker 24hrs from the present
             dueDatePicker.date = Date.init(timeIntervalSinceNow: 24*60*60)
         }
         updateSaveButton()
         updateDueDateLabel(date: dueDatePicker.date)
-       
-    
     }
     
     @IBAction func isCompleteButtonTapped(_ sender: UIButton) {
@@ -108,10 +105,11 @@ class DetailTableViewController: UITableViewController {
     @IBAction func dueDatePickerChanged(_ sender: UIDatePicker) {
         updateDueDateLabel(date: dueDatePicker.date)
     }
+    
     func updateDueDateLabel(date: Date) {
         dueDateLabel.text = ToDo.dueDateFormatter.string(from: date)
     }
-   
+    
     // MARK:- TableView Delegates
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -121,12 +119,12 @@ class DetailTableViewController: UITableViewController {
         switch(indexPath) {
         case[1,1]:
             return isEditingDate ?  largeCellHeight : 0
-        
+            
         case[2,1]:
             return largeCellHeight 
             
         default: return normalCellHeight
-        
+            
         }
     }
     
@@ -136,13 +134,12 @@ class DetailTableViewController: UITableViewController {
         switch (indexPath) {
         case [1,0]:
             isEditingDate = !isEditingDate
-            
             dueDateLabel.textColor = isEditingDate ? .systemTeal : .white
             
         case [2,0]:
             isEditingNotes = !isEditingNotes
-            // When cell is tapped the desired text view will be displayed and assigned to be first responder with blinking cursor.
-            
+        // When cell is tapped the desired text view will be displayed and assigned to be first responder with blinking cursor.
+        
         default:
             break
         }
@@ -158,6 +155,7 @@ class DetailTableViewController: UITableViewController {
         let isComplete = isCompleteButton.isSelected
         let date = dueDatePicker.date
         let notes = notesTextView.text
+        
         
         todo = ToDo(title: title, isComplete: isComplete, dueDate: date, notes: notes)
     }

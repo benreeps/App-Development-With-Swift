@@ -12,19 +12,15 @@ import UIKit
     func tagTapped(sender: ToDoCell)
     
 }
+
 class ToDoCell: UITableViewCell {
     var delegate: ToDoCellDelegate?
     
-    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var titleLabel: UILabel! 
     @IBOutlet var isCompleteButton: UIButton!
     @IBOutlet weak var toDoNumber: UILabel!
     
-    
-    
     @IBAction func completeButtonTapped(_ sender: UIButton) {
-     
         delegate?.tagTapped(sender: self)
     }
-    
-    
 }
