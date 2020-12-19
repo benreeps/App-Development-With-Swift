@@ -9,8 +9,5 @@ import Foundation
 import UIKit
 
 class NumberCell: UITableViewCell {
-    
     @IBOutlet weak var cellNumberLabel: UILabel!
-    
-    
 }
