@@ -49,7 +49,6 @@ class ToDoTableViewController: UITableViewController, ToDoCellDelegate {
         return 20
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
         return UITableView.automaticDimension
     }
     override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -64,7 +63,7 @@ class ToDoTableViewController: UITableViewController, ToDoCellDelegate {
             
             // set the color of the date in title label
             let myLabel = cell.titleLabel!
-            let stringOne = "\(todo.title) (\(date))"
+            let stringOne = "\(todo.title)(\(date))"
             let stringTwo = "(\(date))"
             let range = (stringOne as NSString).range(of: stringTwo)
             let attributedText = NSMutableAttributedString.init(string: stringOne)
