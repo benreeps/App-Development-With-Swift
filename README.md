@@ -12,7 +12,7 @@ A simple app that works as a todo list. The user can create a new task by tappin
 
 <img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-HomeScreen.png" width="300" height="630" /> <img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-EditScreen.png" width="300" height="630" />
 
+#### License
 
-
-
+[MIT](https://choosealicense.com/licenses/mit/)
 
