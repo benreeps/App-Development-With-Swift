@@ -1,7 +1,7 @@
 # Xcode
 
 ## User settings
-xcuserdata/
+xcuserdata/**
 
 ## IOS 
 *.DS_Store
