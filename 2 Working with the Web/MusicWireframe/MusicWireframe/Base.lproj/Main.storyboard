@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="cJC-3Q-EYg">
-                                <rect key="frame" x="68" y="701" width="278" height="70"/>
+                                <rect key="frame" x="68" y="700" width="278" height="70"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNL-xE-hw7">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
@@ -71,6 +71,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Button" image="pause"/>
+                                        <connections>
+                                            <action selector="playPauseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XYb-Bh-i8v"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mk5-3a-VSU">
                                         <rect key="frame" x="202" y="0.0" width="60" height="60"/>
@@ -92,9 +95,18 @@
                             <constraint firstAttribute="trailingMargin" secondItem="6bw-He-wZL" secondAttribute="trailing" id="aSn-Je-vCs"/>
                             <constraint firstItem="wxT-2i-fUE" firstAttribute="top" secondItem="6bw-He-wZL" secondAttribute="bottom" constant="176" id="cdU-43-kd3"/>
                             <constraint firstItem="cJC-3Q-EYg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mMv-Wx-O9K"/>
-                            <constraint firstItem="cJC-3Q-EYg" firstAttribute="top" secondItem="6bw-He-wZL" secondAttribute="bottom" constant="173" id="nsh-DZ-ltI"/>
+                            <constraint firstItem="cJC-3Q-EYg" firstAttribute="top" secondItem="6bw-He-wZL" secondAttribute="bottom" constant="172" id="nsh-DZ-ltI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="albumImageView" destination="6bw-He-wZL" id="SRO-rU-H0w"/>
+                        <outlet property="forwardBackground" destination="wA9-SV-aVh" id="nSe-rd-SO1"/>
+                        <outlet property="forwardButton" destination="Mk5-3a-VSU" id="d1L-DF-CV4"/>
+                        <outlet property="playPauseBackground" destination="v7y-78-1Wn" id="Iiy-Zg-Cv6"/>
+                        <outlet property="playPauseButton" destination="420-B5-BGK" id="YsS-dX-szH"/>
+                        <outlet property="reverseBackground" destination="dNL-xE-hw7" id="K1b-Zl-vOL"/>
+                        <outlet property="reverseButton" destination="q3w-G2-APJ" id="FGM-Ij-kyd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
