@@ -34,15 +34,15 @@ class ViewController: UIViewController {
         
         reverseBackground.layer.cornerRadius = 35.0
         reverseBackground.clipsToBounds = true
-        //   reverseBackground.alpha = 0.0
+        reverseBackground.alpha = 0.0
         
         playPauseBackground.layer.cornerRadius = 35.0
         playPauseBackground.clipsToBounds = true
-        //    playPauseBackground.alpha = 0.0
+        playPauseBackground.alpha = 0.0
         
         forwardBackground.layer.cornerRadius = 35.0
         forwardBackground.clipsToBounds = true
-        //   forwardBackground.alpha = 0.0
+        forwardBackground.alpha = 0.0
     }
     
     @IBAction func playPauseButtonTapped(_ sender: UIButton) {
@@ -58,6 +58,48 @@ class ViewController: UIViewController {
         
         isPlaying = !isPlaying
     }
+    @IBAction func touchedUpInside(_ sender: UIButton) {
+        let buttonBackground: UIView
+        
+        switch sender {
+        
+        case reverseButton:
+            buttonBackground = reverseBackground
+        case playPauseButton:
+            buttonBackground = playPauseBackground
+        case forwardButton:
+            buttonBackground = forwardBackground
+        default:
+            return
+        }
+        
+        UIView.animate(withDuration: 0.25, animations: {
+            buttonBackground.alpha = 0.0
+            buttonBackground.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+            sender.transform = CGAffineTransform.identity
+        }) { (_) in buttonBackground.transform = CGAffineTransform.identity}
+    }
+    @IBAction func touchedDown(_ sender: UIButton) {
+        let buttonBackground: UIView
+        
+        switch sender {
+        
+        case reverseButton:
+            buttonBackground = reverseBackground
+        case playPauseButton:
+            buttonBackground = playPauseBackground
+        case forwardButton:
+            buttonBackground = forwardBackground
+        default:
+            return
+        }
+        
+        UIView.animate(withDuration: 0.25) {
+            buttonBackground.alpha = 0.3
+            sender.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        }
+    }
+    
     
 }
 
