@@ -20,7 +20,7 @@ A simple app that works as a todo list.
 
 &nbsp; 
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-HomeScreen.png" width="300" height="630" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-EditScreen.png" width="300" height="630" />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-HomeScreen.png" width="300" height="630" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-EditScreen.png" width="300" height="630" />
 
 ## Labs
 
