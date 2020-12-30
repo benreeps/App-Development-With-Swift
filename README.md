@@ -1,6 +1,8 @@
 # App Development with Swift
 
-Guided projects and labs included in Apple's [App Development With Swift](https://books.apple.com/us/book/app-development-with-swift/id1219117996) book
+&nbsp; &nbsp; Guided projects and labs included in Apple's [App Development With Swift](https://books.apple.com/us/book/app-development-with-swift/id1219117996) book
+
+&nbsp; &nbsp; Ch.1 - Ch.3 not included
 
 ## Guided Projects
 
@@ -15,6 +17,8 @@ A simple app that works as a todo list.
   - Mark tasks as complete by tapping the orange marker and it will switch to green 
   - Delete a task by swiping to the left on a cell or by selecting "edit" to choose
   - Edit task info by tapping on a cell    
+
+&nbsp; 
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-HomeScreen.png" width="300" height="630" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-EditScreen.png" width="300" height="630" />
 
