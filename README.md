@@ -27,6 +27,8 @@ A simple app that works as a todo list.
 <img width="30%" height="515" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/ToDoList-Delete.png" /> 
 </p>
 
+&nbsp;
+
 ## Labs
 ### Ch.4 
 
@@ -45,7 +47,7 @@ A simple app that works as a todo list.
 ## Activities
 ### Ch.5
 
-### 5.3 Practical Animations
+### Practical Animations
 
 The objective of this activity was to build a wireframe for a music app. 
 
