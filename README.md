@@ -32,9 +32,13 @@ A simple app that works as a todo list.
   - Save employee to the roster 
   - Select a cell to edit employee information 
   
-  &ensp;
-  
 
+  
+<p align="center" width="100%" >
+<img width="25%" height="425" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-Paused.png" /> &nbsp; &nbsp; &nbsp;
+<img width="28%" height="430" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-PressPlay.png" />
+<img width="27%" height="425" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-Playing.png" /> 
+</p>
 
 
 
