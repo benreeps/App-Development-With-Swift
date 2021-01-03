@@ -5,7 +5,7 @@
 &nbsp; &nbsp; Ch.1 - Ch.3 not included
 
 ## Guided Projects
-## Ch.4 
+### Ch.4 
 
 ### ToDo List (XCode Themed)
 
@@ -28,7 +28,7 @@ A simple app that works as a todo list.
 </p>
 
 ## Labs
-## Ch.4 
+### Ch.4 
 
 ### Employee Roster 
 
@@ -43,7 +43,7 @@ A simple app that works as a todo list.
 
 
 ## Activities
-## Ch.5
+### Ch.5
 
 ### 5.3 Practical Animations
 
