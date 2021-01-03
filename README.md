@@ -21,9 +21,9 @@ A simple app that works as a todo list.
 &nbsp; 
 
 <p align="center" width="100%" >
-<img width="29%" height="485" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/ToDoList-List.png" /> &nbsp;
-<img width="30%" height="485" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/ToDoList-Edit:Create.png" />
-<img width="30%" height="490" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/ToDoList-Delete.png" /> 
+<img width="29%" height="495" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/ToDoList-List.png" /> &nbsp;
+<img width="30%" height="495" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/ToDoList-Edit:Create.png" />
+<img width="30%" height="500" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/ToDoList-Delete.png" /> 
 </p>
 
 ## Labs
