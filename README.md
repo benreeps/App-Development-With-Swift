@@ -5,10 +5,13 @@
 &nbsp; &nbsp; Ch.1 - Ch.3 not included
 
 ## Guided Projects
+### Ch.4 
 
-### Ch.4 ToDo List (XCode Themed)
+### ToDo List (XCode Themed)
 
 A simple app that works as a todo list. 
+
+Features include:
 
   - Create a new task by tapping "+" 
   - Assign a due date and time
@@ -20,11 +23,18 @@ A simple app that works as a todo list.
 
 &nbsp; 
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-HomeScreen.png" width="300" height="630" /> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-EditScreen.png" width="300" height="630" />
+<p align="center" width="100%" >
+<img width="29%" height="520" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/ToDoList-List.png" /> &nbsp;
+<img width="30%" height="520" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/ToDoList-Edit:Create.png" />
+<img width="30%" height="525" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/ToDoList-Delete.png" /> 
+</p>
+
+&nbsp;
 
 ## Labs
+### Ch.4 
 
-### Ch.4 Employee Roster 
+### Employee Roster 
 
   - Create a new employee by tapping "+"
   - Use the date picker to choose the employees date of birth 
@@ -33,17 +43,28 @@ A simple app that works as a todo list.
   - Select a cell to edit employee information 
   
 
-  
-<p align="center" width="100%" >
-<img width="27%" height="430" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-Paused.png" /> &nbsp; &nbsp; &nbsp;
-<img width="29%" height="435" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-PressPlay.png" />
-<img width="28%" height="430" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-Playing.png" /> 
-</p>
-
+  &nbsp;
 
 
 ## Activities
+### Ch.5
 
+### Practical Animations
+
+The objective of this activity was to build a wireframe for a music app. 
+
+Features include: 
+
+  - Hidden views behind the forward, reverse and play/pause buttons that become visible when buttons are tapped
+  - Play/Pause button image icon changes when tapped
+  - Play/Pause button image shrinks on touch down and expands on touch up inside 
+  - The purple/blue image view shrinks when in a puased state and expands when in a playing state
+
+<p align="center" width="100%" >
+<img width="27%" height="435" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-Paused.png" /> &nbsp; &nbsp; &nbsp;
+<img width="29%" height="440" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-PressPlay.png" />
+<img width="28%" height="435" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-Playing.png" /> 
+</p>
 
 
 #### License
