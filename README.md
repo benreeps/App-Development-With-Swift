@@ -11,6 +11,8 @@
 
 A simple app that works as a todo list. 
 
+Features include:
+
   - Create a new task by tapping "+" 
   - Assign a due date and time
   - Add task notes 
@@ -41,7 +43,7 @@ A simple app that works as a todo list.
   - Select a cell to edit employee information 
   
 
-  
+  &nbsp;
 
 
 ## Activities
