@@ -35,9 +35,9 @@ A simple app that works as a todo list.
 
   
 <p align="center" width="100%" >
-<img width="27%" height="425" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-Paused.png" /> &nbsp; &nbsp; &nbsp;
-<img width="29%" height="430" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-PressPlay.png" />
-<img width="28%" height="425" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-Playing.png" /> 
+<img width="27%" height="430" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-Paused.png" /> &nbsp; &nbsp; &nbsp;
+<img width="29%" height="435" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-PressPlay.png" />
+<img width="28%" height="430" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-Playing.png" /> 
 </p>
 
 
