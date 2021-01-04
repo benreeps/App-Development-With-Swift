@@ -24,9 +24,9 @@ Features:
 &nbsp; 
 
 <p align="center" width="100%" >
-<img width="29%" height="505" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-List.png" /> &nbsp;
-<img width="30%" height="505" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-Edit:Create.png" />
-<img width="30%" height="510" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-Delete.png" /> 
+<img width="29%" height="500" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-List.png" /> &nbsp;
+<img width="30%" height="500" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-Edit:Create.png" />
+<img width="30%" height="505" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-Delete.png" /> 
 </p>
 
 &nbsp;
