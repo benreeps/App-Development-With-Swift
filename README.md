@@ -47,8 +47,8 @@ Features include:
 
 <p align="center" width="100%" >
 <img width="29%" height="505" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/EmployeeRoster-List.png" /> &nbsp;
-<img width="30%" height="505" src=" " />
-<img width="30%" height="510" src=" " /> 
+<img width="30%" height="505" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/EmployeeRoster-Edit.png" />
+<img width="30%" height="510" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/EmployeeRoster-EmployeeType.png" /> 
 </p>
   
 &nbsp;
