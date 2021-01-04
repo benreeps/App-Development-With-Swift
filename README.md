@@ -45,13 +45,13 @@ Features:
   - Select the employee type 
   - Save employee to the roster 
   - Select a cell to edit employee information 
-  
-<p align="center" width="100%" >
-<img width="27%" height="435" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-List.png" /> 
-<img width="25%" height="445" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-Edit.png" />
-<img width="27%" height="435" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-EmployeeType.png" /> 
+
+<p align="center" >
+<img src="https://user-images.githubusercontent.com/72151868/103574541-23f52600-4e9e-11eb-8b8b-53e6a42872bd.png" /> &nbsp; &nbsp; &nbsp;
+<img src="https://user-images.githubusercontent.com/72151868/103574256-99acc200-4e9d-11eb-8722-6257a834bbe3.png" />
+<img src="https://user-images.githubusercontent.com/72151868/103574645-4f781080-4e9e-11eb-853e-4d826f24b792.png" />
 </p>
-  
+
 
 ## Activities
 ### Ch.5
