@@ -11,7 +11,7 @@
 
 A simple app that works as a todo list. 
 
-Features include:
+Features:
 
   - Create a new task by tapping "+" 
   - Assign a due date and time
@@ -37,15 +37,16 @@ Features include:
 
 ### Employee Roster 
 
+An app used to store information about each employee. 
+
+Features:
+
   - Create a new employee by tapping "+"
   - Use the date picker to choose the employees date of birth 
   - Select the employee type 
   - Save employee to the roster 
   - Select a cell to edit employee information 
   
-&nbsp;
-
-
 <p align="center" width="100%" >
 <img width="25%" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/EmployeeRoster-List.png" /> 
 <img width="25%" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/EmployeeRoster-Edit.png" />
@@ -62,7 +63,7 @@ Features include:
 
 The objective of this activity was to build a wireframe for a music app. 
 
-Features include: 
+Features: 
 
   - Hidden views behind the forward, reverse and play/pause buttons that become visible when buttons are tapped
   - Play/Pause button image icon changes when tapped
