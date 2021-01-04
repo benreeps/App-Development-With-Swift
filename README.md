@@ -24,9 +24,9 @@ Features:
 &nbsp; 
 
 <p align="center" width="100%" >
-<img width="29%" height="505" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/ToDoList-List.png" /> &nbsp;
-<img width="30%" height="505" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/ToDoList-Edit:Create.png" />
-<img width="30%" height="510" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/ToDoList-Delete.png" /> 
+<img width="29%" height="505" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-List.png" /> &nbsp;
+<img width="30%" height="505" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-Edit:Create.png" />
+<img width="30%" height="510" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-Delete.png" /> 
 </p>
 
 &nbsp;
@@ -47,9 +47,9 @@ Features:
   - Select a cell to edit employee information 
   
 <p align="center" width="100%" >
-<img width="25%" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/EmployeeRoster-List.png" /> 
-<img width="25%" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/EmployeeRoster-Edit.png" />
-<img width="25%" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/EmployeeRoster-EmployeeType.png" /> 
+<img width="25%" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-List.png" /> 
+<img width="25%" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-Edit.png" />
+<img width="25%" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-EmployeeType.png" /> 
 </p>
   
 
@@ -68,9 +68,9 @@ Features:
   - The purple/blue image view shrinks when in a puased state and expands when in a playing state
 
 <p align="center" width="100%" >
-<img width="27%" height="430" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-Paused.png" /> &nbsp; &nbsp; &nbsp;
-<img width="29%" height="435" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-PressPlay.png" />
-<img width="28%" height="430" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/MusicWireframe-Playing.png" /> 
+<img width="27%" height="430" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/MusicWireframe-Paused.png" /> &nbsp; &nbsp; &nbsp;
+<img width="29%" height="435" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/MusicWireframe-PressPlay.png" />
+<img width="28%" height="430" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/MusicWireframe-Playing.png" /> 
 </p>
 
 
