@@ -23,14 +23,7 @@ Features:
 
 &nbsp; 
 
-<p align="center" width="100%" >
-<img width="29%" height="505" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/ToDoList-List.png" /> &nbsp;
-<img width="30%" height="505" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/ToDoList-Edit:Create.png" />
-<img width="30%" height="510" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/ToDoList-Delete.png" /> 
-</p>
-
-&nbsp;
-
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-HomeScreen.png" width="300" height="630" /><img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-EditScreen.png" width="300" height="630" />
 
 ## Labs
 ### Ch.4 
@@ -53,8 +46,7 @@ Features:
 <img width="25%" src="https://github.com/benreeps/App-Development-With-Swift/blob/images/Images/EmployeeRoster-EmployeeType.png" /> 
 </p>
   
-&nbsp;
-
+&nbsp; <img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-EmployeeList.png" width="300" height="630" /><img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-CreateNewEmployee.png" width="300" height="630" /><img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-EmployeeType.png" width="300" height="630" />
 
 ## Activities
 ### Ch.5
