@@ -47,9 +47,9 @@ Features:
   - Select a cell to edit employee information 
   
 <p align="center" width="100%" >
-<img width="27%" height="435" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-List.png" /> 
-<img width="25%" height="445" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-Edit.png" />
-<img width="27%" height="435" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-EmployeeType.png" /> 
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-List.png" /> 
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-Edit.png" />
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-EmployeeType.png" /> 
 </p>
   
 
