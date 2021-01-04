@@ -5,9 +5,8 @@
 &nbsp; &nbsp; Ch.1 - Ch.3 not included
 
 ## Guided Projects
-### Ch.4 
 
-### ToDo List (XCode Themed)
+### Ch.4 - ToDo List (XCode Themed)
 
 A simple app that works as a todo list. 
 
@@ -32,9 +31,8 @@ Features:
 &nbsp;
 
 ## Labs
-### Ch.4 
 
-### Employee Roster 
+### Ch.4 Employee Roster 
 
 An app used to store information about each employee. 
 
@@ -45,6 +43,8 @@ Features:
   - Select the employee type 
   - Save employee to the roster 
   - Select a cell to edit employee information 
+  
+&nbsp;
 
 <p align="center" >
 <img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-List.png" width="250" /> &nbsp; &nbsp; &nbsp;
@@ -54,9 +54,8 @@ Features:
 
 
 ## Activities
-### Ch.5
 
-### Practical Animations
+### Ch.5 Practical Animations
 
 The objective of this activity was to build a wireframe for a music app. 
 
