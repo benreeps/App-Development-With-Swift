@@ -61,9 +61,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="RJi-um-WOR" id="Aip-iB-0Og"/>
                         <outlet property="submitButton" destination="APQ-Yd-JwF" id="K8e-Pr-1QI"/>
-                        <segue destination="edt-t9-8Vv" kind="popoverPresentation" identifier="SubmitEmail" id="Vse-UF-bi4">
-                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                        </segue>
+                        <segue destination="edt-t9-8Vv" kind="show" id="i6Y-7W-YJv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -92,6 +90,7 @@
                             <constraint firstItem="ef8-4V-Ato" firstAttribute="centerY" secondItem="LqC-3l-vj5" secondAttribute="centerY" id="g90-bL-ibG"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ujU-ws-KCg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="egX-tQ-F0w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
