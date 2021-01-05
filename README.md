@@ -22,10 +22,10 @@ Features:
 
 &nbsp; 
 
-<p align="center" width="100%" >
-<img width="29%" height="460" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-List.png" /> &nbsp;
-<img width="30%" height="460" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-Edit:Create.png" />
-<img width="30%" height="465" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-Delete.png" /> 
+<p align="center" >
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-List.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-Edit.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ToDoList-Delete.png" width="255" >
 </p>
 
 &nbsp;
@@ -47,15 +47,15 @@ Features:
 &nbsp;
 
 <p align="center" >
-<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-List.png" width="250" /> &nbsp; &nbsp; &nbsp;
-<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-Edit.png" width="250" /> &nbsp; &nbsp; &nbsp;
-<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-EmployeeType.png" width="250" >
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-List.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-Edit.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-EmployeeType.png" width="255" >
 </p>
 
 
 ## Activities
 
-### Ch.5 Practical Animations
+### 5.3 Practical Animations
 
 The objective of this activity was to build a wireframe for a music app. 
 
@@ -66,12 +66,15 @@ Features:
   - Play/Pause button image shrinks on touch down and expands on touch up inside 
   - The purple/blue image view shrinks when in a puased state and expands when in a playing state
 
-<p align="center" width="100%" >
-<img width="27%" height="430" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/MusicWireframe-Paused.png" /> &nbsp; &nbsp; &nbsp;
-<img width="29%" height="435" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/MusicWireframe-PressPlay.png" />
-<img width="28%" height="430" src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/MusicWireframe-Playing.png" /> 
+&nbsp;
+
+<p align="center" >
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/MusicWireframe-Playing.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/MusicWireframe-PressPause.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/MusicWireframe-Paused.png" width="255" >
 </p>
 
+&nbsp;
 
 #### License
 
