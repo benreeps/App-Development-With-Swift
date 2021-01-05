@@ -55,7 +55,7 @@ Features:
 
 ## Activities
 
-### Ch.5 Practical Animations
+### 5.3 Practical Animations
 
 The objective of this activity was to build a wireframe for a music app. 
 
