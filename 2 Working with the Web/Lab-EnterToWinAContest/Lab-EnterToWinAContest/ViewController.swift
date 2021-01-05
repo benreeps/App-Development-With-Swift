@@ -8,9 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var emailIsValid = false {
-       
-    }
+    var emailIsValid = false
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var submitButton: UIButton!
@@ -22,7 +20,18 @@ class ViewController: UIViewController {
         
         
     }
-
+    
+    @IBAction func submitButtonPressed(_ sender: UIButton) {
+        
+    }
+    
+    func checkEmailStatus() {
+        if emailTextField.text?.contains("@" + ".com") != nil {
+            emailIsValid = true
+        } else {
+            emailIsValid = false
+        }
+    }
 
 }
 
