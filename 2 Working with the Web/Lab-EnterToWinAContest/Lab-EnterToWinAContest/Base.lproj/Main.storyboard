@@ -17,20 +17,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RJi-um-WOR">
-                                <rect key="frame" x="130" y="612.5" width="154" height="34"/>
+                                <rect key="frame" x="117" y="557" width="180" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Ud2-qA-m77"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="isEditingEmail:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="2N7-gS-8bY"/>
+                                </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER TO WIN!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exr-j7-sj7">
-                                <rect key="frame" x="46.5" y="243" width="321" height="59.5"/>
-                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="49"/>
-                                <color key="textColor" red="1" green="0.92168003066938176" blue="0.26219661562589763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER TO WIN!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exr-j7-sj7">
+                                <rect key="frame" x="0.0" y="243" width="414" height="64"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="53"/>
+                                <color key="textColor" systemColor="systemGray5Color"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="2" height="-2"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APQ-Yd-JwF">
-                                <rect key="frame" x="147" y="680.5" width="120" height="44"/>
+                                <rect key="frame" x="147" y="701" width="120" height="44"/>
                                 <color key="backgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="5ku-HG-Cck"/>
@@ -47,14 +54,16 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
-                            <constraint firstItem="APQ-Yd-JwF" firstAttribute="top" secondItem="RJi-um-WOR" secondAttribute="bottom" constant="34" id="0JG-Kh-n3Q"/>
-                            <constraint firstItem="RJi-um-WOR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="Cz2-aP-ctM"/>
+                            <constraint firstItem="APQ-Yd-JwF" firstAttribute="top" secondItem="RJi-um-WOR" secondAttribute="bottom" constant="110" id="0JG-Kh-n3Q"/>
                             <constraint firstItem="Exr-j7-sj7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DrF-dU-XhV"/>
                             <constraint firstItem="Exr-j7-sj7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="199" id="JkE-vs-E9g"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RJi-um-WOR" secondAttribute="trailing" constant="130" id="Mlf-Wj-az8"/>
-                            <constraint firstItem="RJi-um-WOR" firstAttribute="top" secondItem="Exr-j7-sj7" secondAttribute="bottom" constant="310" id="l7k-Iy-9ae"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Exr-j7-sj7" secondAttribute="trailing" id="LbS-eh-6rL"/>
+                            <constraint firstItem="Exr-j7-sj7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ly7-kB-HRq"/>
+                            <constraint firstItem="APQ-Yd-JwF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SRL-9n-ap7"/>
+                            <constraint firstItem="RJi-um-WOR" firstAttribute="top" secondItem="Exr-j7-sj7" secondAttribute="bottom" constant="250" id="l7k-Iy-9ae"/>
+                            <constraint firstItem="RJi-um-WOR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pOc-ST-7ZN"/>
                             <constraint firstItem="APQ-Yd-JwF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sKR-vu-7ob"/>
                         </constraints>
                     </view>
@@ -100,6 +109,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
