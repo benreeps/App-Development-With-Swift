@@ -1,6 +1,7 @@
 # App Development with Swift
 
 &nbsp; &nbsp; Guided projects and labs included in Apple's [App Development With Swift](https://books.apple.com/us/book/app-development-with-swift/id1219117996) book
+
 &nbsp; &nbsp; Ch.1 - Ch.3 not included
 
 &nbsp; &nbsp; Note: I have gone beyond the requirements/expectations for the majority of these projects, which is why many of them will not appear or function exactly as they do in the book.
