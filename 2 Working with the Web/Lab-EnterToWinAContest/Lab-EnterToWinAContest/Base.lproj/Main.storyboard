@@ -17,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RJi-um-WOR">
-                                <rect key="frame" x="117" y="557" width="180" height="34"/>
+                                <rect key="frame" x="97" y="557" width="220" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="Ud2-qA-m77"/>
+                                    <constraint firstAttribute="width" constant="220" id="Ud2-qA-m77"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -70,7 +70,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="RJi-um-WOR" id="Aip-iB-0Og"/>
                         <outlet property="submitButton" destination="APQ-Yd-JwF" id="K8e-Pr-1QI"/>
-                        <segue destination="edt-t9-8Vv" kind="show" id="i6Y-7W-YJv"/>
+                        <segue destination="edt-t9-8Vv" kind="show" identifier="SubmissionComplete" id="i6Y-7W-YJv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -85,18 +85,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submission Complete! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef8-4V-Ato">
-                                <rect key="frame" x="51" y="403.5" width="312" height="35"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
-                                <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOOD LUCK!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef8-4V-Ato">
+                                <rect key="frame" x="0.0" y="199" width="414" height="64"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="53"/>
+                                <color key="textColor" systemColor="systemGray5Color"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="2" height="-2"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lu2-B8-IrT"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
+                            <constraint firstItem="ef8-4V-Ato" firstAttribute="leading" secondItem="lu2-B8-IrT" secondAttribute="leading" id="FGK-fC-vuh"/>
+                            <constraint firstItem="ef8-4V-Ato" firstAttribute="top" secondItem="lu2-B8-IrT" secondAttribute="top" constant="199" id="HO2-9y-wom"/>
+                            <constraint firstItem="lu2-B8-IrT" firstAttribute="trailing" secondItem="ef8-4V-Ato" secondAttribute="trailing" id="I3g-EC-yeX"/>
                             <constraint firstItem="ef8-4V-Ato" firstAttribute="centerX" secondItem="LqC-3l-vj5" secondAttribute="centerX" id="g73-d0-SqT"/>
-                            <constraint firstItem="ef8-4V-Ato" firstAttribute="centerY" secondItem="LqC-3l-vj5" secondAttribute="centerY" id="g90-bL-ibG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ujU-ws-KCg"/>
@@ -107,9 +112,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

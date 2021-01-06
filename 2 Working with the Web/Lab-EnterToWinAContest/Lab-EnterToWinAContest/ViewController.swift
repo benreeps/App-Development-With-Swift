@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     var emailList: [Email] = []
+    var emailIsValid = false
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var submitButton: UIButton!
@@ -27,7 +28,7 @@ class ViewController: UIViewController {
     @IBAction func submitButtonPressed(_ sender: UIButton) {
         checkEmailStatus()
         emailTextField.resignFirstResponder()
-
+        
     }
     
     @IBAction func isEditingEmail(_ sender: UITextField) {
@@ -43,7 +44,9 @@ class ViewController: UIViewController {
         let emailView: UIView = self.emailTextField
         
         if email!.range(of: "@") != nil {
-            return
+            
+                performSegue(withIdentifier: "SubmissionComplete", sender: submitButton)
+            
             
         } else {
             let animation = CABasicAnimation(keyPath: "position")
