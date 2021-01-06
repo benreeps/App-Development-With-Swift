@@ -52,6 +52,27 @@ Features:
 <img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EmployeeRoster-EmployeeType.png" width="255" >
 </p>
 
+&nbsp;
+
+### Ch.5 Enter to Win a Contest
+
+Enter an email address for a chance to win.
+
+Features:
+
+  - If the email address is invalid the text view border will turn red and the text view will briefly shake from side to side 
+  - If the email address is valid the usere will be directed to the "GOOD LUCK" screen after tapping submit 
+  - If the previous entry was invalid the text view border will return to its original color when the user taps the text view to enter a new email
+  
+&nbsp;
+
+<p align="center" >
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EnterToWin-Main.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EnterToWin-InvalidEmail.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/EnterToWin-Complete.png" width="255" >
+</p>
+
+&nbsp;
 
 ## Activities
 
