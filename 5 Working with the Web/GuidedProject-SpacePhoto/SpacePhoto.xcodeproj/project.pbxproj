@@ -15,6 +15,7 @@
 		266249CA25AFB056005D5621 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 266249C825AFB056005D5621 /* LaunchScreen.storyboard */; };
 		266249D425AFE4AA005D5621 /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266249D325AFE4A9005D5621 /* PhotoInfo.swift */; };
 		266249D725AFECC4005D5621 /* URL+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266249D625AFECC4005D5621 /* URL+Helpers.swift */; };
+		266249DA25AFF1B2005D5621 /* PhotoInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266249D925AFF1B2005D5621 /* PhotoInfoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		266249CB25AFB056005D5621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		266249D325AFE4A9005D5621 /* PhotoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfo.swift; sourceTree = "<group>"; };
 		266249D625AFECC4005D5621 /* URL+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Helpers.swift"; sourceTree = "<group>"; };
+		266249D925AFF1B2005D5621 /* PhotoInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				266249C325AFB051005D5621 /* Main.storyboard */,
 				266249C625AFB056005D5621 /* Assets.xcassets */,
 				266249D325AFE4A9005D5621 /* PhotoInfo.swift */,
+				266249D925AFF1B2005D5621 /* PhotoInfoController.swift */,
 				266249D625AFECC4005D5621 /* URL+Helpers.swift */,
 				266249C825AFB056005D5621 /* LaunchScreen.storyboard */,
 				266249CB25AFB056005D5621 /* Info.plist */,
@@ -145,6 +148,7 @@
 			files = (
 				266249D425AFE4AA005D5621 /* PhotoInfo.swift in Sources */,
 				266249D725AFECC4005D5621 /* URL+Helpers.swift in Sources */,
+				266249DA25AFF1B2005D5621 /* PhotoInfoController.swift in Sources */,
 				266249C225AFB051005D5621 /* ViewController.swift in Sources */,
 				266249BE25AFB051005D5621 /* AppDelegate.swift in Sources */,
 				266249C025AFB051005D5621 /* SceneDelegate.swift in Sources */,
