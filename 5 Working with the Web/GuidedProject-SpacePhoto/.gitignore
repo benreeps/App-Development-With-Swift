@@ -27,7 +27,7 @@ Packages/
 
 
 # Xcode workspace
-project.xcworkspace/*
+*.xcworkspace/
 
 # Carthage
 #
