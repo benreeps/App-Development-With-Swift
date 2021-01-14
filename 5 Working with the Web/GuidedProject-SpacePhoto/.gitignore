@@ -1,7 +1,7 @@
 # Xcode
 
 ## User settings
-xcuserdata/**
+xcuserdata/*
 
 ## IOS 
 *.DS_Store
@@ -27,7 +27,7 @@ Packages/
 
 
 # Xcode workspace
-*.xcworkspace
+project.xcworkspace/*
 
 # Carthage
 #
