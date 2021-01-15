@@ -11,8 +11,7 @@
         <!--Space Photo-->
         <scene sceneID="nLq-Mp-0fS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oLD-lm-hnp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="sYE-w3-wNN" sceneMemberID="viewController">
+                <viewController id="sYE-w3-wNN" customClass="ViewController" customModule="SpacePhoto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cKJ-Au-W0x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,14 +64,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Space Photo" largeTitleDisplayMode="always" id="N72-m1-uwe"/>
+                    <connections>
+                        <outlet property="copyrightLabel" destination="5Ji-Vu-qi8" id="d7N-AI-KfH"/>
+                        <outlet property="descriptionLabel" destination="kK7-SC-nO7" id="gwT-Ra-8Oz"/>
+                        <outlet property="spaceImageView" destination="Ium-uf-zcd" id="BBk-Lt-hvM"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oLD-lm-hnp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="962.31884057971024" y="375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eNq-I5-QjF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wu0-oG-orh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dPr-GX-4aA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="xyc-ah-JSg">
@@ -84,6 +88,7 @@
                         <segue destination="sYE-w3-wNN" kind="relationship" relationship="rootViewController" id="yR7-nC-i6Y"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wu0-oG-orh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>

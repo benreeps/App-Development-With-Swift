@@ -65,12 +65,12 @@
 				266249BD25AFB051005D5621 /* AppDelegate.swift */,
 				266249BF25AFB051005D5621 /* SceneDelegate.swift */,
 				266249C125AFB051005D5621 /* ViewController.swift */,
-				266249C325AFB051005D5621 /* Main.storyboard */,
-				266249C625AFB056005D5621 /* Assets.xcassets */,
 				266249D325AFE4A9005D5621 /* PhotoInfo.swift */,
 				266249D925AFF1B2005D5621 /* PhotoInfoController.swift */,
 				266249D625AFECC4005D5621 /* URL+Helpers.swift */,
+				266249C325AFB051005D5621 /* Main.storyboard */,
 				266249C825AFB056005D5621 /* LaunchScreen.storyboard */,
+				266249C625AFB056005D5621 /* Assets.xcassets */,
 				266249CB25AFB056005D5621 /* Info.plist */,
 			);
 			path = SpacePhoto;
