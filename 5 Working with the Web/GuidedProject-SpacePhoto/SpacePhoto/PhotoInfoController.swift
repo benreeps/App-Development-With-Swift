@@ -15,7 +15,7 @@ struct PhotoInfoController {
         // Create a [String: String] dictionary with keys and values that match your queries. Then update your url value to use the new withQueries(_:) method to generate the full URL
         
         let baseURL = URL(string: "https://api.nasa.gov/planetary/apod")!
-        let query: [String: String] = ["api_key": "DEMO_KEY", "date": "2018-02-01"]
+        let query: [String: String] = ["api_key": "DEMO_KEY", "date": "2018-01-18"]
         let url = baseURL.withQueries(query)!
         
         let task = URLSession.shared.dataTask(with: url) { (data, URLResponse, Error) in

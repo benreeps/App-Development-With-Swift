@@ -43,12 +43,13 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="CnZ-VR-UII" secondAttribute="trailing" id="5bl-Cm-GYD"/>
                                     <constraint firstItem="CnZ-VR-UII" firstAttribute="leading" secondItem="ohd-YC-IgD" secondAttribute="leading" id="Gk4-uY-PnI"/>
                                     <constraint firstAttribute="width" secondItem="CnZ-VR-UII" secondAttribute="width" id="Omy-7q-ywJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="CnZ-VR-UII" secondAttribute="bottom" constant="553" id="t8S-pg-isR"/>
-                                    <constraint firstItem="CnZ-VR-UII" firstAttribute="top" secondItem="fTO-Vx-LgS" secondAttribute="top" id="wCw-Rz-qT0"/>
+                                    <constraint firstItem="CnZ-VR-UII" firstAttribute="top" secondItem="ohd-YC-IgD" secondAttribute="top" id="dje-GT-Xc7"/>
+                                    <constraint firstAttribute="bottom" secondItem="CnZ-VR-UII" secondAttribute="bottom" id="t8S-pg-isR"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="EXe-GB-j3x"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="fTO-Vx-LgS"/>
