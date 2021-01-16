@@ -4,7 +4,7 @@
 
 &nbsp; &nbsp; Ch.1 - Ch.3 not included
 
-&nbsp; &nbsp; Note: I have gone beyond the requirements/expectations for the majority of these projects, which is why many of them will not appear or function exactly as they do in the book.
+&nbsp; &nbsp; Note: I have gone beyond the requirements/expectations for the majority of these projects, which is why many of them may not appear or function exactly as they do in the book.
 
 ## Guided Projects (Ch.4 - Ch.6)
 
