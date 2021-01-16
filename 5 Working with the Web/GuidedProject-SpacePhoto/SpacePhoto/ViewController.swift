@@ -30,7 +30,9 @@ class ViewController: UIViewController {
     }
     
     func updateUI(with photoInfo: PhotoInfo) {
-        let task = URLSession.shared.dataTask(with: photoInfo.url, completionHandler: { (data, URLResponse, Error) in
+        guard let url = photoInfo.url.withHTTPS() else {return}
+        
+        let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, URLResponse, Error) in
             if let data = data,
                let image = UIImage(data: data) {
                 DispatchQueue.main.async {
