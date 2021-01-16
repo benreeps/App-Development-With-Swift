@@ -29,6 +29,7 @@ struct PhotoInfoController {
                 completion(nil)
             }
         }
+         
         task.resume()
     }
     

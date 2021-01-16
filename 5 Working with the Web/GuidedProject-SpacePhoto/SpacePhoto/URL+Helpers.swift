@@ -14,6 +14,8 @@ extension URL {
         return components?.url
     }
     
+    // Update the url to use HTTPS 
+    
     func withHTTPS() -> URL? {
         var components = URLComponents(url: self, resolvingAgainstBaseURL: true)
         components?.scheme = "https"

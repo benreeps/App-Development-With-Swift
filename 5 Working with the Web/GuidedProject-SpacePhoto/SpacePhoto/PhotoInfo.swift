@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct PhotoInfo: Codable {
     var title: String
     var description: String
