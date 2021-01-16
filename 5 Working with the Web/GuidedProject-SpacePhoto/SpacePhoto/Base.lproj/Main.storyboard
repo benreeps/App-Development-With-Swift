@@ -19,24 +19,24 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohd-YC-IgD">
                                 <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="CnZ-VR-UII">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="353"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CnZ-VR-UII">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="405"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ium-uf-zcd">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ium-uf-zcd">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="300" id="PJ4-xE-dhs"/>
+                                                    <constraint firstAttribute="height" constant="350" id="PJ4-xE-dhs"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kK7-SC-nO7">
-                                                <rect key="frame" x="0.0" y="306" width="414" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kK7-SC-nO7">
+                                                <rect key="frame" x="0.0" y="360" width="414" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ji-Vu-qi8">
-                                                <rect key="frame" x="0.0" y="332.5" width="414" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="0.0" y="390.5" width="414" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -46,9 +46,9 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="CnZ-VR-UII" secondAttribute="trailing" id="5bl-Cm-GYD"/>
                                     <constraint firstItem="CnZ-VR-UII" firstAttribute="leading" secondItem="ohd-YC-IgD" secondAttribute="leading" id="Gk4-uY-PnI"/>
-                                    <constraint firstItem="CnZ-VR-UII" firstAttribute="top" secondItem="ohd-YC-IgD" secondAttribute="top" id="NbB-gc-oew"/>
                                     <constraint firstAttribute="width" secondItem="CnZ-VR-UII" secondAttribute="width" id="Omy-7q-ywJ"/>
                                     <constraint firstAttribute="bottom" secondItem="CnZ-VR-UII" secondAttribute="bottom" constant="553" id="t8S-pg-isR"/>
+                                    <constraint firstItem="CnZ-VR-UII" firstAttribute="top" secondItem="fTO-Vx-LgS" secondAttribute="top" id="wCw-Rz-qT0"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="EXe-GB-j3x"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="fTO-Vx-LgS"/>
@@ -57,7 +57,7 @@
                         <viewLayoutGuide key="safeArea" id="MTq-Nh-YeR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ohd-YC-IgD" firstAttribute="top" secondItem="MTq-Nh-YeR" secondAttribute="top" id="7Ai-ig-bdi"/>
+                            <constraint firstItem="ohd-YC-IgD" firstAttribute="top" secondItem="MTq-Nh-YeR" secondAttribute="top" id="Bkt-O1-hrZ"/>
                             <constraint firstItem="ohd-YC-IgD" firstAttribute="leading" secondItem="MTq-Nh-YeR" secondAttribute="leading" id="Gg3-jk-iBi"/>
                             <constraint firstItem="ohd-YC-IgD" firstAttribute="bottom" secondItem="MTq-Nh-YeR" secondAttribute="bottom" id="WvK-w7-hLh"/>
                             <constraint firstItem="ohd-YC-IgD" firstAttribute="trailing" secondItem="MTq-Nh-YeR" secondAttribute="trailing" id="wt7-EA-yG5"/>

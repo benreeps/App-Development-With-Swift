@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     let photoInfoController = PhotoInfoController()
     
     @IBOutlet weak var descriptionLabel: UILabel!
@@ -21,11 +21,21 @@ class ViewController: UIViewController {
         
         descriptionLabel.text = ""
         copyrightLabel.text = ""
-    
+        
         photoInfoController.fetchPhotoInfo { (photoInfo) in
             if let photoInfo = photoInfo {
+                self.updateUI(with: photoInfo)
+            }
+        }
+    }
+    
+    func updateUI(with photoInfo: PhotoInfo) {
+        let task = URLSession.shared.dataTask(with: photoInfo.url, completionHandler: { (data, URLResponse, Error) in
+            if let data = data,
+               let image = UIImage(data: data) {
                 DispatchQueue.main.async {
                     self.title = photoInfo.title
+                    self.spaceImageView.image = image
                     self.descriptionLabel.text = photoInfo.description
                     
                     if let copyright = photoInfo.copyright {
@@ -35,7 +45,8 @@ class ViewController: UIViewController {
                     }
                 }
             }
-        }
+        })
+        task.resume()
     }
 }
 
