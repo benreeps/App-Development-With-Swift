@@ -90,9 +90,9 @@ Features:
 &nbsp; 
 
 <p align="center" >
-<img src="https://github.com/benreeps/App-Development-With-Swift/blob/SpacePhoto/Images/SpacePhoto-1.png" width="255" /> &nbsp; &nbsp; &nbsp;
-<img src="https://github.com/benreeps/App-Development-With-Swift/blob/SpacePhoto/Images/SpacePhoto-2.png" width="255" /> &nbsp; &nbsp; &nbsp;
-<img src="https://github.com/benreeps/App-Development-With-Swift/blob/SpacePhoto/Images/SpacePhoto-3.png" width="255" >
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/SpacePhoto-1.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/SpacePhoto-2.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/SpacePhoto-3.png" width="255" >
 </p>
 
 &nbsp;
