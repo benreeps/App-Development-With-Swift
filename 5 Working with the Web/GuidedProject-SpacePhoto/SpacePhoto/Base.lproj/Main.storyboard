@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dPr-GX-4aA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Space Photo-->
+        <scene sceneID="nLq-Mp-0fS">
+            <objects>
+                <viewController id="sYE-w3-wNN" customClass="ViewController" customModule="SpacePhoto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cKJ-Au-W0x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohd-YC-IgD">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CnZ-VR-UII">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="405"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ium-uf-zcd">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="350" id="PJ4-xE-dhs"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kK7-SC-nO7">
+                                                <rect key="frame" x="0.0" y="360" width="414" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ji-Vu-qi8">
+                                                <rect key="frame" x="0.0" y="390.5" width="414" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="CnZ-VR-UII" secondAttribute="trailing" id="5bl-Cm-GYD"/>
+                                    <constraint firstItem="CnZ-VR-UII" firstAttribute="leading" secondItem="ohd-YC-IgD" secondAttribute="leading" id="Gk4-uY-PnI"/>
+                                    <constraint firstAttribute="width" secondItem="CnZ-VR-UII" secondAttribute="width" id="Omy-7q-ywJ"/>
+                                    <constraint firstItem="CnZ-VR-UII" firstAttribute="top" secondItem="ohd-YC-IgD" secondAttribute="top" id="dje-GT-Xc7"/>
+                                    <constraint firstAttribute="bottom" secondItem="CnZ-VR-UII" secondAttribute="bottom" id="t8S-pg-isR"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="EXe-GB-j3x"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="fTO-Vx-LgS"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MTq-Nh-YeR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ohd-YC-IgD" firstAttribute="top" secondItem="MTq-Nh-YeR" secondAttribute="top" id="Bkt-O1-hrZ"/>
+                            <constraint firstItem="ohd-YC-IgD" firstAttribute="leading" secondItem="MTq-Nh-YeR" secondAttribute="leading" id="Gg3-jk-iBi"/>
+                            <constraint firstItem="ohd-YC-IgD" firstAttribute="bottom" secondItem="MTq-Nh-YeR" secondAttribute="bottom" id="WvK-w7-hLh"/>
+                            <constraint firstItem="ohd-YC-IgD" firstAttribute="trailing" secondItem="MTq-Nh-YeR" secondAttribute="trailing" id="wt7-EA-yG5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Space Photo" largeTitleDisplayMode="always" id="N72-m1-uwe"/>
+                    <connections>
+                        <outlet property="copyrightLabel" destination="5Ji-Vu-qi8" id="d7N-AI-KfH"/>
+                        <outlet property="descriptionLabel" destination="kK7-SC-nO7" id="gwT-Ra-8Oz"/>
+                        <outlet property="spaceImageView" destination="Ium-uf-zcd" id="BBk-Lt-hvM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oLD-lm-hnp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962.31884057971024" y="375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eNq-I5-QjF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dPr-GX-4aA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="xyc-ah-JSg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sYE-w3-wNN" kind="relationship" relationship="rootViewController" id="yR7-nC-i6Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wu0-oG-orh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
