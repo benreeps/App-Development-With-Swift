@@ -6,9 +6,9 @@
 
 &nbsp; &nbsp; Note: I have gone beyond the requirements/expectations for the majority of these projects, which is why many of them will not appear or function exactly as they do in the book.
 
-## Guided Projects
+## Guided Projects (Ch.4 - Ch.6)
 
-### Ch.4 - ToDo List (XCode Themed)
+### ToDo List (XCode Themed)
 
 A simple app that works as a todo list. 
 
@@ -32,29 +32,9 @@ Features:
 
 &nbsp;
 
-### Ch.5 - SpacePhoto (NASA-APOD) 
+## Labs (Ch.4 - Ch.6)
 
-“An app that pulls data from the NASA Astronomy Picture a Day (APOD) API, and displays the information and the photo in the app.”
-Excerpt From: [App Development With Swift](https://books.apple.com/us/book/app-development-with-swift/id1219117996) 
-
-Features:
-
-  - Scroll to view full description  
-
-&nbsp; 
-
-<p align="center" >
-<img src="https://github.com/benreeps/App-Development-With-Swift/blob/SpacePhoto/Images/SpacePhoto-1.png" width="255" /> &nbsp; &nbsp; &nbsp;
-<img src="https://github.com/benreeps/App-Development-With-Swift/blob/SpacePhoto/Images/SpacePhoto-2.png" width="255" /> &nbsp; &nbsp; &nbsp;
-<img src="https://github.com/benreeps/App-Development-With-Swift/blob/SpacePhoto/Images/SpacePhoto-3.png" width="255" >
-</p>
-
-&nbsp;
-
-
-## Labs
-
-### Ch.4 Employee Roster 
+### Employee Roster 
 
 An app used to store information about each employee. 
 
@@ -76,7 +56,7 @@ Features:
 
 &nbsp;
 
-### Ch.5 Enter to Win a Contest
+### Enter to Win a Contest
 
 Enter an email address for a chance to win.
 
@@ -96,9 +76,28 @@ Features:
 
 &nbsp;
 
-## Activities
+## Activities (Ch.4 - Ch.6)
 
-### 5.3 Practical Animations
+### SpacePhoto (NASA-APOD) 
+
+“An app that pulls data from the NASA Astronomy Picture a Day (APOD) API, and displays the information and the photo in the app.”
+Excerpt From: [App Development With Swift](https://books.apple.com/us/book/app-development-with-swift/id1219117996) 
+
+Features:
+
+  - Scroll to view full description  
+
+&nbsp; 
+
+<p align="center" >
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/SpacePhoto/Images/SpacePhoto-1.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/SpacePhoto/Images/SpacePhoto-2.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/SpacePhoto/Images/SpacePhoto-3.png" width="255" >
+</p>
+
+&nbsp;
+
+### Practical Animations
 
 The objective of this activity was to build a wireframe for a music app. 
 
@@ -118,6 +117,7 @@ Features:
 </p>
 
 &nbsp;
+
 
 #### License
 
