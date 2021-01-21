@@ -1,10 +1,11 @@
 # Xcode
 
 ## User settings
-xcuserdata/*
+xcuserdata
 
 ## IOS 
 *.DS_Store
+
 ## Obj-C/Swift specific
 *.hmap
 
@@ -24,16 +25,13 @@ Packages/
  *.xcodeproj
 .swiftpm
 .build/
-
+iTunesSearch.xcodeproj/project.pbxproj
+iTunesSearch.xcodeproj/project.xcworkspace/*
 
 # Xcode workspace
-*.xcworkspace/
+*.xcworkspace
 
 # Carthage
-#
-# Add this line if you want to avoid checking in source code from Carthage dependencies.
-# Carthage/Checkouts
-
 Carthage/Build/
 
 # Accio dependency management
