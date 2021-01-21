@@ -7,8 +7,11 @@ class StoreItemListTableViewController: UITableViewController {
     @IBOutlet weak var filterSegmentedControl: UISegmentedControl!
     
     // add item controller property
+    let storeItemController = StoreItemController()
     
-    var items = [String]()
+    var items = [StoreItem]()
+    
+    
     
     let queryOptions = ["movie", "music", "software", "ebook"]
     
@@ -28,8 +31,20 @@ class StoreItemListTableViewController: UITableViewController {
         if !searchTerm.isEmpty {
             
             // set up query dictionary
+            let query: [String: String] = ["term": searchTerm, "media": mediaType, "limit": "5"]
             
             // use the item controller to fetch items
+            storeItemController.fetchItems(matching: query) { (items) in
+                
+                DispatchQueue.main.async {
+                    if let items = items {
+                        self.items = items
+                        self.tableView.reloadData()
+                    } else {
+                        print("Data did not load.")
+                    }
+                }
+            }
             // if successful, use the main queue to set self.items and reload the table view
             // otherwise, print an error to the console
         }
@@ -39,15 +54,21 @@ class StoreItemListTableViewController: UITableViewController {
         
         let item = items[indexPath.row]
         
-        cell.textLabel?.text = item
-        
         // set label to the item's name
+        cell.textLabel?.text = item.name
         // set detail label to the item's subtitle
+        cell.detailTextLabel?.text = item.artist
         // reset the image view to the gray image
+        cell.imageView?.image = UIImage(named: "gray")
         
-        // initialize a network task to fetch the item's artwork
-        // if successful, use the main queue capture the cell, to initialize a UIImage, and set the cell's image view's image to the 
-        // resume the task
+        storeItemController.fetchItemArtwork(url: item.artworkURL) { (image) in
+            if let image = image {
+                DispatchQueue.main.async {
+                    cell.imageView?.image = image 
+                }
+            }
+        }
+        
     }
     
     @IBAction func filterOptionUpdated(_ sender: UISegmentedControl) {

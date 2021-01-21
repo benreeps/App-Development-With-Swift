@@ -7,28 +7,42 @@
 //
 
 import Foundation
+import UIKit
 
-func fetchItems(matching query: [String: String], completion: @escaping ([StoreItem]?) -> Void) {
-
-    let baseURL = URL(string: "http://itunes.apple.com/search")!
-    guard let url = baseURL.withQueries(query) else {
-        completion(nil)
-        print("Unable to find url with queries provided.")
-        return
-    }
-    
-    let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-        
-        let jsonDecoder = JSONDecoder()
-        if let data = data,
-        let storeItems = try? jsonDecoder.decode(StoreItems.self, from: data) {
-            completion(storeItems.results)
-           
-        } else {
-            print("Either no data was returned or data was not properly decoded")
+struct StoreItemController {
+    func fetchItems(matching query: [String: String], completion: @escaping ([StoreItem]?) -> Void) {
+        let baseURL = URL(string: "http://itunes.apple.com/search")!
+        guard let url = baseURL.withQueries(query) else {
             completion(nil)
+            print("Unable to find url with queries provided.")
             return
         }
+        
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            let jsonDecoder = JSONDecoder()
+            if let data = data,
+               let storeItems = try? jsonDecoder.decode(StoreItems.self, from: data) {
+                completion(storeItems.results)
+                
+            } else {
+                print("Either no data was returned or data was not properly decoded")
+                completion(nil)
+                return
+            }
+        }
+        task.resume()
     }
-    task.resume()
+    
+    func fetchItemArtwork(url: URL, completion: @escaping (UIImage?) -> Void) {
+        let task = URLSession.shared.dataTask(with: url) { (data, URLResponse, error) in
+            if let data = data,
+               let image = UIImage(data: data) {
+                completion(image)
+            } else {
+                completion(nil)
+            }
+        }
+        task.resume()
+    }
+    
 }

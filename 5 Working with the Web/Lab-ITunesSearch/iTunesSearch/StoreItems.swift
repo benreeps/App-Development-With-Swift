@@ -15,15 +15,17 @@ struct StoreItems: Codable {
 struct StoreItem: Codable {
     var artist: String
     var mediaType: String
-    var songName: String
+    var name: String
     var description: String?
     var longDescription: String?
+    var artworkURL: URL
     
     enum Keys: String, CodingKey {
         case artist = "artistName"
         case mediaType = "kind"
-        case songName = "trackName"
+        case name = "trackName"
         case description = "wrapperType"
+        case artworkURL = "artworkUrl100"
     }
     
     enum AdditionalKeys: String, CodingKey {
@@ -34,7 +36,8 @@ struct StoreItem: Codable {
         let valueContainer = try decoder.container(keyedBy: Keys.self)
         self.artist = try valueContainer.decode(String.self, forKey: Keys.artist)
         self.mediaType = try valueContainer.decode(String.self, forKey: Keys.mediaType)
-        self.songName = try valueContainer.decode(String.self, forKey: Keys.songName)
+        self.name = try valueContainer.decode(String.self, forKey: Keys.name)
+        self.artworkURL = try valueContainer.decode(URL.self, forKey: Keys.artworkURL)
         // This statement ensures that a description or a long description will be accepted if available
         if let description = try? valueContainer.decode(String.self, forKey: Keys.description) {
             self.description = description
