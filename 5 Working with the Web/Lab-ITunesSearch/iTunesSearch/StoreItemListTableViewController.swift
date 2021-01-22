@@ -8,12 +8,8 @@ class StoreItemListTableViewController: UITableViewController {
     
     // add item controller property
     let storeItemController = StoreItemController()
-    
-    var items = [StoreItem]()
-    
-    
-    
     let queryOptions = ["movie", "music", "software", "ebook"]
+    var items = [StoreItem]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +27,7 @@ class StoreItemListTableViewController: UITableViewController {
         if !searchTerm.isEmpty {
             
             // set up query dictionary
-            let query: [String: String] = ["term": searchTerm, "media": mediaType, "limit": "5"]
+            let query: [String: String] = ["term": searchTerm, "media": mediaType, "limit": "10"]
             
             // use the item controller to fetch items
             storeItemController.fetchItems(matching: query) { (items) in
@@ -45,8 +41,6 @@ class StoreItemListTableViewController: UITableViewController {
                     }
                 }
             }
-            // if successful, use the main queue to set self.items and reload the table view
-            // otherwise, print an error to the console
         }
     }
     
@@ -64,7 +58,7 @@ class StoreItemListTableViewController: UITableViewController {
         storeItemController.fetchItemArtwork(url: item.artworkURL) { (image) in
             if let image = image {
                 DispatchQueue.main.async {
-                    cell.imageView?.image = image 
+                    cell.imageView?.image = image
                 }
             }
         }
