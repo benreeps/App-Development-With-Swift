@@ -34,6 +34,17 @@ Features:
 
 ## Labs (Ch.4 - Ch.6)
 
+### ITunes Search
+
+"“An app that will allow the user to search for different media types and view the results in a table view.” 
+Excerpt From: [App Development With Swift](https://books.apple.com/us/book/app-development-with-swift/id1219117996)
+
+<p align="center" >
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/ITunesSearch/Images/ITunesSearch-Music.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/ITunesSearch/Images/ITunesSearch-Movies.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/ITunesSearch/Images/ITunesSearch-Apps.png" width="255" >
+</p>
+
 ### Employee Roster 
 
 An app used to store information about each employee. 
@@ -78,7 +89,7 @@ Features:
 
 ## Activities (Ch.4 - Ch.6)
 
-### SpacePhoto (NASA-APOD) 
+### Space Photo (NASA-APOD) 
 
 “An app that pulls data from the NASA Astronomy Picture a Day (APOD) API, and displays the information and the photo in the app.”
 Excerpt From: [App Development With Swift](https://books.apple.com/us/book/app-development-with-swift/id1219117996) 
