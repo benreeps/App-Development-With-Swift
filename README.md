@@ -40,7 +40,7 @@ Features:
 Excerpt From: [App Development With Swift](https://books.apple.com/us/book/app-development-with-swift/id1219117996)
 
 <p align="center" >
-<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ITunesSearch-Music.png" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ITunesSearch-Music.png" width="255" /> &nbsp; &nbsp; &nbsp;
 <img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ITunesSearch-Movies.png" width="255" /> &nbsp; &nbsp; &nbsp;
 <img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/ITunesSearch-Apps.png" width="255" >
 </p>
