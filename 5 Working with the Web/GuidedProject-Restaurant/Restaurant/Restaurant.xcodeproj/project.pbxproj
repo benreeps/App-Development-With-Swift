@@ -20,6 +20,7 @@
 		2674796225BE262700309CC3 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674796125BE262700309CC3 /* MenuItem.swift */; };
 		2674796525BE2B6100309CC3 /* IntermediaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674796425BE2B6100309CC3 /* IntermediaryModels.swift */; };
 		2674796825BE369D00309CC3 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674796725BE369D00309CC3 /* Order.swift */; };
+		2674797125BE398D00309CC3 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674797025BE398D00309CC3 /* MenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		2674796125BE262700309CC3 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		2674796425BE2B6100309CC3 /* IntermediaryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntermediaryModels.swift; sourceTree = "<group>"; };
 		2674796725BE369D00309CC3 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		2674797025BE398D00309CC3 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,22 +72,55 @@
 		2674793B25BCB73A00309CC3 /* Restaurant */ = {
 			isa = PBXGroup;
 			children = (
-				2674793C25BCB73A00309CC3 /* AppDelegate.swift */,
-				2674793E25BCB73A00309CC3 /* SceneDelegate.swift */,
-				2674794025BCB73A00309CC3 /* ViewController.swift */,
-				2674794225BCB73A00309CC3 /* Main.storyboard */,
-				2674796125BE262700309CC3 /* MenuItem.swift */,
-				2674796425BE2B6100309CC3 /* IntermediaryModels.swift */,
-				2674796725BE369D00309CC3 /* Order.swift */,
-				2674795125BCD9DC00309CC3 /* CategoryTableViewController.swift */,
-				2674795425BCD9EC00309CC3 /* MenuTableViewController.swift */,
-				2674795E25BCE3B400309CC3 /* MenuItemDetailViewController.swift */,
-				2674795725BCDA0500309CC3 /* OrderTableViewController.swift */,
+				2674796E25BE38C100309CC3 /* Storyboards */,
+				2674796D25BE388A00309CC3 /* Delegates */,
+				2674796A25BE37EC00309CC3 /* Models */,
+				2674796C25BE384600309CC3 /* Controllers */,
 				2674794525BCB74000309CC3 /* Assets.xcassets */,
-				2674794725BCB74000309CC3 /* LaunchScreen.storyboard */,
 				2674794A25BCB74000309CC3 /* Info.plist */,
 			);
 			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		2674796A25BE37EC00309CC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2674796125BE262700309CC3 /* MenuItem.swift */,
+				2674796425BE2B6100309CC3 /* IntermediaryModels.swift */,
+				2674796725BE369D00309CC3 /* Order.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2674796C25BE384600309CC3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2674795125BCD9DC00309CC3 /* CategoryTableViewController.swift */,
+				2674795425BCD9EC00309CC3 /* MenuTableViewController.swift */,
+				2674795725BCDA0500309CC3 /* OrderTableViewController.swift */,
+				2674794025BCB73A00309CC3 /* ViewController.swift */,
+				2674795E25BCE3B400309CC3 /* MenuItemDetailViewController.swift */,
+				2674797025BE398D00309CC3 /* MenuController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2674796D25BE388A00309CC3 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2674793E25BCB73A00309CC3 /* SceneDelegate.swift */,
+				2674793C25BCB73A00309CC3 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		2674796E25BE38C100309CC3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2674794225BCB73A00309CC3 /* Main.storyboard */,
+				2674794725BCB74000309CC3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +198,7 @@
 				2674796825BE369D00309CC3 /* Order.swift in Sources */,
 				2674795525BCD9EC00309CC3 /* MenuTableViewController.swift in Sources */,
 				2674795F25BCE3B400309CC3 /* MenuItemDetailViewController.swift in Sources */,
+				2674797125BE398D00309CC3 /* MenuController.swift in Sources */,
 				2674793F25BCB73A00309CC3 /* SceneDelegate.swift in Sources */,
 				2674796525BE2B6100309CC3 /* IntermediaryModels.swift in Sources */,
 				2674796225BE262700309CC3 /* MenuItem.swift in Sources */,
