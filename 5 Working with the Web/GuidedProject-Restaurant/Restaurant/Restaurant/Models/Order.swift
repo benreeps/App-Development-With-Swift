@@ -10,7 +10,7 @@ import Foundation
 struct Order: Codable {
     var menuItems = [MenuItem]
     
-    init(menuitems: [MenuItem] = []) {
-        self.menuItems = menuitems
+    init(menuItems: [MenuItem] = []) {
+        self.menuItems = menuItems
     }
 }

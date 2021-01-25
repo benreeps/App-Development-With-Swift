@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2674793D25BCB73A00309CC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674793C25BCB73A00309CC3 /* AppDelegate.swift */; };
 		2674793F25BCB73A00309CC3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674793E25BCB73A00309CC3 /* SceneDelegate.swift */; };
-		2674794125BCB73A00309CC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674794025BCB73A00309CC3 /* ViewController.swift */; };
 		2674794425BCB73A00309CC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2674794225BCB73A00309CC3 /* Main.storyboard */; };
 		2674794625BCB74000309CC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2674794525BCB74000309CC3 /* Assets.xcassets */; };
 		2674794925BCB74000309CC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2674794725BCB74000309CC3 /* LaunchScreen.storyboard */; };
@@ -27,7 +26,6 @@
 		2674793925BCB73A00309CC3 /* Restaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Restaurant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2674793C25BCB73A00309CC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2674793E25BCB73A00309CC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2674794025BCB73A00309CC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2674794325BCB73A00309CC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2674794525BCB74000309CC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2674794825BCB74000309CC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 				2674795125BCD9DC00309CC3 /* CategoryTableViewController.swift */,
 				2674795425BCD9EC00309CC3 /* MenuTableViewController.swift */,
 				2674795725BCDA0500309CC3 /* OrderTableViewController.swift */,
-				2674794025BCB73A00309CC3 /* ViewController.swift */,
 				2674795E25BCE3B400309CC3 /* MenuItemDetailViewController.swift */,
 				2674797025BE398D00309CC3 /* MenuController.swift */,
 			);
@@ -193,7 +190,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2674794125BCB73A00309CC3 /* ViewController.swift in Sources */,
 				2674793D25BCB73A00309CC3 /* AppDelegate.swift in Sources */,
 				2674796825BE369D00309CC3 /* Order.swift in Sources */,
 				2674795525BCD9EC00309CC3 /* MenuTableViewController.swift in Sources */,

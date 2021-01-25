@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class MenuController {
     let baseURL = URL(string: "http://localhost:8090/")!
