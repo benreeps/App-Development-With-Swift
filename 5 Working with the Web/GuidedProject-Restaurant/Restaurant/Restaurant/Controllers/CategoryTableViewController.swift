@@ -55,6 +55,15 @@ class CategoryTableViewController: UITableViewController {
         cell.textLabel?.text = categoryString.capitalized
     }
      
+    //MARK:- Segue info
+    
+    override func prepare(for Segue: UIStoryboardSegue, sender: Any? ) {
+        if segue.identifier == "MenuSegue" {
+            let menuTableViewController = segue.destination as? MenuTableViewController
+            let index = tableView.indexPathForSelectedRow!.row
+            menuTableViewController.category = categories[index]
+        }
+    }
     
     /*
      // Override to support conditional editing of the table view.
