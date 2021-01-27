@@ -9,15 +9,32 @@ import UIKit
 
 class MenuTableViewController: UITableViewController {
 
-    var category: String! 
+    let menuController = MenuController()
+    var menuItems = [MenuItem]()
+    var category: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        title = category.capitalized
+        menuController.fetchMenuItems(forCategory: category) { (menuItems) in
+            if let menuItems = menuItems {
+                self.updateUI(with: menuItems)
+            }
+        }
+    }
+    
+    func updateUI(with menuItems: [MenuItem]) {
+        DispatchQueue.main.async {
+            self.menuItems = menuItems
+            self.tableView.reloadData()
+        }
+    }
+    
+    func configure(_ cell: UITableViewCell, forItemAt indexPath: IndexPath ) {
+        let menuItem = menuItems[indexPath.row]
+        cell.textLabel?.text = menuItem.name
+        cell.detailTextLabel?.text = "$\(menuItem.price)"
     }
 
     // MARK: - Table view data source
@@ -29,18 +46,18 @@ class MenuTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return menuItems.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCellIdentifier", for: indexPath)
 
-        // Configure the cell...
+        configure(cell, forItemAt: indexPath)
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
