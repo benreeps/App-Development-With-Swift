@@ -82,7 +82,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="3LK-CX-in6" kind="show" identifier="" id="GXk-kV-qxn"/>
+                                    <segue destination="3LK-CX-in6" kind="show" identifier="MenuDetailSegue" id="GXk-kV-qxn"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

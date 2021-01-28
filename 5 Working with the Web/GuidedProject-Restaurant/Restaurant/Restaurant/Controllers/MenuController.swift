@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class MenuController {
+    static let shared = MenuController() 
     
     let baseURL = URL(string: "http://localhost:8090/")!
     
