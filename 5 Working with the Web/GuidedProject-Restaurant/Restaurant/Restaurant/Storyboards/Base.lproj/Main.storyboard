@@ -108,14 +108,53 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="L7Q-YX-h2H">
                                 <rect key="frame" x="0.0" y="96" width="414" height="224"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uVk-Ue-2eV">
+                                <rect key="frame" x="20" y="328" width="43.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQ9-L3-3EJ">
+                                <rect key="frame" x="314" y="328" width="80" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="t2g-5t-yHJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iTq-le-YmO">
+                                <rect key="frame" x="20" y="362.5" width="374" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgW-Hd-XKN">
+                                <rect key="frame" x="20" y="764" width="374" height="41"/>
+                                <color key="backgroundColor" red="0.15471291325918324" green="0.52344736823738058" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Add To Order">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qu9-GH-5Rb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="NgW-Hd-XKN" firstAttribute="leading" secondItem="9jA-59-0Po" secondAttribute="leadingMargin" id="3aN-On-Vgd"/>
+                            <constraint firstItem="RQ9-L3-3EJ" firstAttribute="top" secondItem="L7Q-YX-h2H" secondAttribute="bottom" constant="8" id="7U3-zE-APb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RQ9-L3-3EJ" secondAttribute="trailing" id="97q-kw-fn4"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="NgW-Hd-XKN" secondAttribute="bottom" constant="8" id="G08-xy-r69"/>
                             <constraint firstItem="qu9-GH-5Rb" firstAttribute="trailing" secondItem="L7Q-YX-h2H" secondAttribute="trailing" id="JGL-61-78o"/>
+                            <constraint firstItem="iTq-le-YmO" firstAttribute="top" secondItem="uVk-Ue-2eV" secondAttribute="bottom" constant="8" id="Jn9-BC-7dJ"/>
                             <constraint firstItem="L7Q-YX-h2H" firstAttribute="height" secondItem="9jA-59-0Po" secondAttribute="height" multiplier="0.25" id="LU8-ER-aZZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iTq-le-YmO" secondAttribute="trailing" id="MbY-lw-okt"/>
                             <constraint firstItem="L7Q-YX-h2H" firstAttribute="top" secondItem="qu9-GH-5Rb" secondAttribute="top" constant="8" id="MnT-o2-lCQ"/>
+                            <constraint firstItem="iTq-le-YmO" firstAttribute="leading" secondItem="9jA-59-0Po" secondAttribute="leadingMargin" id="ROR-Hk-7uw"/>
+                            <constraint firstItem="uVk-Ue-2eV" firstAttribute="top" secondItem="L7Q-YX-h2H" secondAttribute="bottom" constant="8" id="TSU-fa-C9y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NgW-Hd-XKN" secondAttribute="trailing" id="gkg-YI-65r"/>
                             <constraint firstItem="L7Q-YX-h2H" firstAttribute="leading" secondItem="qu9-GH-5Rb" secondAttribute="leading" id="uuf-eZ-iGO"/>
+                            <constraint firstItem="uVk-Ue-2eV" firstAttribute="leading" secondItem="9jA-59-0Po" secondAttribute="leadingMargin" id="wnu-Yt-iqh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KZD-dB-3OV"/>
