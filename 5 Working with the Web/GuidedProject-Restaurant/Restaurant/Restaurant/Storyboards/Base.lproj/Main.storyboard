@@ -104,8 +104,19 @@
                     <view key="view" contentMode="scaleToFill" id="9jA-59-0Po">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="L7Q-YX-h2H">
+                                <rect key="frame" x="0.0" y="96" width="414" height="224"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qu9-GH-5Rb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qu9-GH-5Rb" firstAttribute="trailing" secondItem="L7Q-YX-h2H" secondAttribute="trailing" id="JGL-61-78o"/>
+                            <constraint firstItem="L7Q-YX-h2H" firstAttribute="height" secondItem="9jA-59-0Po" secondAttribute="height" multiplier="0.25" id="LU8-ER-aZZ"/>
+                            <constraint firstItem="L7Q-YX-h2H" firstAttribute="top" secondItem="qu9-GH-5Rb" secondAttribute="top" constant="8" id="MnT-o2-lCQ"/>
+                            <constraint firstItem="L7Q-YX-h2H" firstAttribute="leading" secondItem="qu9-GH-5Rb" secondAttribute="leading" id="uuf-eZ-iGO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KZD-dB-3OV"/>
                 </viewController>
@@ -203,6 +214,7 @@
     <resources>
         <image name="bag.fill" catalog="system" width="128" height="128"/>
         <image name="book.fill" catalog="system" width="128" height="102"/>
+        <image name="placeholder" width="100" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
