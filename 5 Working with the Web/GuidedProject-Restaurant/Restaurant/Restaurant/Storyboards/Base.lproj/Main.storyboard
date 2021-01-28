@@ -158,6 +158,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KZD-dB-3OV"/>
+                    <connections>
+                        <outlet property="addToOrderButton" destination="NgW-Hd-XKN" id="Re8-7A-b8e"/>
+                        <outlet property="detailTextLabel" destination="iTq-le-YmO" id="3G0-9p-Rr5"/>
+                        <outlet property="imageView" destination="L7Q-YX-h2H" id="qf2-Zx-6UR"/>
+                        <outlet property="priceLabel" destination="RQ9-L3-3EJ" id="zCq-bm-gVR"/>
+                        <outlet property="titleLabel" destination="uVk-Ue-2eV" id="xNe-V0-YDR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DV6-B1-cb8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
