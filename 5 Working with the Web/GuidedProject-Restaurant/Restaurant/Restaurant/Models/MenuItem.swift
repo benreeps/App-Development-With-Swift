@@ -11,7 +11,7 @@ struct MenuItem: Codable {
     var id: Int
     var name: String
     var detailText: String
-    var price: Int
+    var price: Double
     var category: String
     var imageURL: URL
     

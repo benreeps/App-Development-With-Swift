@@ -34,18 +34,12 @@ class MenuTableViewController: UITableViewController {
     func configure(_ cell: UITableViewCell, forItemAt indexPath: IndexPath ) {
         let menuItem = menuItems[indexPath.row]
         cell.textLabel?.text = menuItem.name
-        cell.detailTextLabel?.text = "$\(menuItem.price)"
+        cell.detailTextLabel?.text = String(format: "$%.2f", menuItem.price)
     }
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return menuItems.count
     }
 

@@ -58,7 +58,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="m0V-XP-4PP" detailTextLabel="g46-Xz-psp" style="IBUITableViewCellStyleValue1" id="VU4-tK-e2U">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MenuCellIdentifier" textLabel="m0V-XP-4PP" detailTextLabel="g46-Xz-psp" style="IBUITableViewCellStyleValue1" id="VU4-tK-e2U">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VU4-tK-e2U" id="eMf-0y-l2T">
@@ -91,7 +91,7 @@
                             <outlet property="delegate" destination="dYW-JT-KJa" id="1QV-E6-oUp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="KfP-Or-FZF"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="KfP-Or-FZF"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ZR-7o-AjX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,6 +186,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RI0-h6-MqA" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d0B-GQ-lfg">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class MenuController {
+    
     let baseURL = URL(string: "http://localhost:8090/")!
     
     func fetchCategories(completion: @escaping ([String]?) -> Void) {
@@ -31,8 +32,7 @@ class MenuController {
         let initialMenuURL = baseURL.appendingPathComponent("menu")
         
         var components = URLComponents(url: initialMenuURL, resolvingAgainstBaseURL: true)!
-        components.queryItems = [URLQueryItem(name: "category", value: "categoryName")]
-        
+        components.queryItems = [URLQueryItem(name: "category", value: categoryName)]
         let menuURL = components.url!
         
         let task = URLSession.shared.dataTask(with: menuURL) { (data, response, error) in
