@@ -133,9 +133,13 @@
                                 <rect key="frame" x="20" y="764" width="374" height="41"/>
                                 <color key="backgroundColor" red="0.15471291325918324" green="0.52344736823738058" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Add To Order">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addToOrderButtonTapped:" destination="3LK-CX-in6" eventType="touchUpInside" id="2Ft-dM-jC6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qu9-GH-5Rb"/>

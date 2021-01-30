@@ -20,8 +20,17 @@ class MenuItemDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        addToOrderButton.layer.cornerRadius = 5.0
         updateUI()
     }
+    
+    @IBAction func addToOrderButtonTapped(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.3) {
+            self.addToOrderButton.transform = CGAffineTransform(scaleX: 2.0, y: 2.0)
+            self.addToOrderButton.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        }
+    }
+    
     
     func updateUI() {
         titleLabel.text = menuItem.name
