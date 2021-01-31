@@ -9,9 +9,18 @@ import Foundation
 import UIKit
 
 class MenuController {
-    static let shared = MenuController() 
+    static let shared = MenuController()
+    // This is a new notification that will be sent when the user updates their order
+    static let orderUpdatedNotification = Notification.Name("MenuController.orderUpdated")
     
     let baseURL = URL(string: "http://localhost:8090/")!
+    
+    var order = Order() {
+        // This is an observer  will send your updated order notification every time the order is modified
+        didSet {
+            NotificationCenter.default.post(name: MenuController.orderUpdatedNotification, object: nil)
+        }
+    }
     
     func fetchCategories(completion: @escaping ([String]?) -> Void) {
         let categoryURL = baseURL.appendingPathComponent("categories")
