@@ -8,7 +8,7 @@
 import UIKit
 
 class MenuItemDetailViewController: UIViewController {
-
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
@@ -19,7 +19,7 @@ class MenuItemDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         addToOrderButton.layer.cornerRadius = 5.0
         updateUI()
     }

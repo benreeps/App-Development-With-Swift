@@ -8,14 +8,13 @@
 import UIKit
 
 class MenuTableViewController: UITableViewController {
-
     
     var menuItems = [MenuItem]()
     var category: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         title = category.capitalized
         MenuController.shared.fetchMenuItems(forCategory: category) { (menuItems) in
             if let menuItems = menuItems {
@@ -36,19 +35,18 @@ class MenuTableViewController: UITableViewController {
         cell.textLabel?.text = menuItem.name
         cell.detailTextLabel?.text = String(format: "$%.2f", menuItem.price)
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menuItems.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCellIdentifier", for: indexPath)
-
+        
         configure(cell, forItemAt: indexPath)
-
+        
         return cell
     }
     
