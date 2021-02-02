@@ -236,29 +236,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="iAU-8g-bVu">
+                                <rect key="frame" x="10" y="338" width="394" height="220"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rij-XQ-uPP">
-                                <rect key="frame" x="88.5" y="363" width="237" height="119"/>
+                                <rect key="frame" x="43" y="374" width="328.5" height="148"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your order is " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQH-S3-iHv">
-                                        <rect key="frame" x="68.5" y="0.0" width="100.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="102" y="0.0" width="124" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On The Way!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5I-GI-lwB">
-                                        <rect key="frame" x="0.0" y="20.5" width="237" height="45.5"/>
-                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="39"/>
+                                        <rect key="frame" x="0.0" y="26.5" width="328.5" height="62.5"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="54"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick up in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVR-Hu-W6A">
-                                        <rect key="frame" x="82" y="66" width="73.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="118.5" y="89" width="91.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 minutes." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqL-gS-1Nl">
-                                        <rect key="frame" x="41" y="86.5" width="155.5" height="32.5"/>
+                                        <rect key="frame" x="86.5" y="115.5" width="155.5" height="32.5"/>
                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="28"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
@@ -266,7 +270,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUk-f5-JsB">
-                                <rect key="frame" x="172" y="616" width="70" height="32"/>
+                                <rect key="frame" x="172" y="666" width="70" height="32"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="IoG-9j-iov"/>
@@ -276,22 +280,28 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="RkL-gF-49y" kind="unwind" unwindAction="unwindToOrderListWithSegue:" id="m3D-fy-oTk"/>
+                                    <segue destination="RkL-gF-49y" kind="unwind" identifier="DismissConfirmation" unwindAction="unwindToOrderListWithSegue:" id="m3D-fy-oTk"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0e5-w5-re6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="OUk-f5-JsB" firstAttribute="top" secondItem="Rij-XQ-uPP" secondAttribute="bottom" constant="134" id="9Bn-ys-pKn"/>
-                            <constraint firstItem="Rij-XQ-uPP" firstAttribute="top" secondItem="0e5-w5-re6" secondAttribute="top" constant="275" id="F0u-27-IgZ"/>
-                            <constraint firstItem="Rij-XQ-uPP" firstAttribute="centerX" secondItem="GIl-sp-g8s" secondAttribute="centerX" id="Pk7-8g-2Ai"/>
+                            <constraint firstItem="0e5-w5-re6" firstAttribute="trailing" secondItem="iAU-8g-bVu" secondAttribute="trailing" constant="10" id="MXr-gp-YVP"/>
+                            <constraint firstItem="OUk-f5-JsB" firstAttribute="top" secondItem="iAU-8g-bVu" secondAttribute="bottom" constant="108" id="NBE-Ze-mJw"/>
+                            <constraint firstItem="iAU-8g-bVu" firstAttribute="top" secondItem="0e5-w5-re6" secondAttribute="top" constant="250" id="SWh-0r-HZ9"/>
+                            <constraint firstItem="iAU-8g-bVu" firstAttribute="centerX" secondItem="GIl-sp-g8s" secondAttribute="centerX" id="XDD-uj-i0x"/>
+                            <constraint firstItem="iAU-8g-bVu" firstAttribute="leading" secondItem="0e5-w5-re6" secondAttribute="leading" constant="10" id="dSj-Q3-cGL"/>
+                            <constraint firstItem="Rij-XQ-uPP" firstAttribute="centerX" secondItem="GIl-sp-g8s" secondAttribute="centerX" id="eZf-CA-8jf"/>
+                            <constraint firstItem="Rij-XQ-uPP" firstAttribute="centerY" secondItem="GIl-sp-g8s" secondAttribute="centerY" id="kAi-XI-iNi"/>
                             <constraint firstItem="OUk-f5-JsB" firstAttribute="centerX" secondItem="GIl-sp-g8s" secondAttribute="centerX" id="lPl-IV-BqJ"/>
+                            <constraint firstItem="iAU-8g-bVu" firstAttribute="centerY" secondItem="GIl-sp-g8s" secondAttribute="centerY" id="nbB-rq-VYI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="o6e-pw-AAk"/>
                     <connections>
                         <outlet property="dismissButton" destination="OUk-f5-JsB" id="kyI-DU-rzR"/>
+                        <outlet property="statusView" destination="iAU-8g-bVu" id="jUi-cE-RqD"/>
                         <outlet property="timeRemainingLabel" destination="BqL-gS-1Nl" id="8zu-Q2-jkq"/>
                     </connections>
                 </viewController>

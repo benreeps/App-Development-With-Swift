@@ -84,7 +84,15 @@ class OrderTableViewController: UITableViewController {
     
     //MARK:- Segue info
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ConfirmationSegue" {
+            let orderConfirmationViewController = segue.destination as! OrderConfirmationViewController
+            orderConfirmationViewController.minutes = orderMinutes
+        }
+    }
     @IBAction func unwindToOrderList(segue: UIStoryboardSegue) {
-        
+        if segue.identifier == "DismissConfirmation" {
+            MenuController.shared.order.menuItems.removeAll()
+        }
     }
 }
