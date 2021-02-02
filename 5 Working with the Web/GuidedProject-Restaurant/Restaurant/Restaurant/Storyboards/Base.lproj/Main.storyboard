@@ -47,7 +47,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vKA-oh-th4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1617" y="112"/>
+            <point key="canvasLocation" x="1526" y="112"/>
         </scene>
         <!--Menu Table View Controller-->
         <scene sceneID="aTZ-Bn-gJp">
@@ -95,7 +95,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ZR-7o-AjX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2454" y="112"/>
+            <point key="canvasLocation" x="2342" y="112"/>
         </scene>
         <!--Menu Item Detail View Controller-->
         <scene sceneID="X90-s3-Exd">
@@ -172,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DV6-B1-cb8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3183" y="112"/>
+            <point key="canvasLocation" x="3158" y="112"/>
         </scene>
         <!--Your Order-->
         <scene sceneID="0hd-rB-Umn">
@@ -216,10 +216,64 @@
                     <navigationItem key="navigationItem" title="Your Order" id="Piv-gg-EMk">
                         <barButtonItem key="rightBarButtonItem" title="Submit" id="jz1-wg-Sfm"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="UdV-zg-OYD" kind="show" identifier="ConfirmationSegue" id="Yfx-Ow-1C8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pel-dQ-Xy9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1586.9565217391305" y="769.41964285714278"/>
+            <point key="canvasLocation" x="1525" y="769"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BmJ-vg-pIp">
+            <objects>
+                <viewController id="UdV-zg-OYD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GIl-sp-g8s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rij-XQ-uPP">
+                                <rect key="frame" x="88.5" y="363" width="237" height="119"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your order is " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQH-S3-iHv">
+                                        <rect key="frame" x="68.5" y="0.0" width="100.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On The Way!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5I-GI-lwB">
+                                        <rect key="frame" x="0.0" y="20.5" width="237" height="45.5"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="39"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick up in" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVR-Hu-W6A">
+                                        <rect key="frame" x="82" y="66" width="73.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 minutes." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqL-gS-1Nl">
+                                        <rect key="frame" x="41" y="86.5" width="155.5" height="32.5"/>
+                                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="28"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0e5-w5-re6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rij-XQ-uPP" firstAttribute="top" secondItem="0e5-w5-re6" secondAttribute="top" constant="275" id="F0u-27-IgZ"/>
+                            <constraint firstItem="Rij-XQ-uPP" firstAttribute="centerX" secondItem="GIl-sp-g8s" secondAttribute="centerX" id="Pk7-8g-2Ai"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="o6e-pw-AAk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ziU-D8-lhH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2342.0289855072465" y="768.75"/>
         </scene>
         <!--Your Order-->
         <scene sceneID="hpz-pv-NSg">
@@ -238,7 +292,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uyf-8r-D3e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="697.10144927536237" y="768.75"/>
+            <point key="canvasLocation" x="697" y="769"/>
         </scene>
         <!--Menu-->
         <scene sceneID="X8x-HN-F3i">
@@ -285,6 +339,9 @@
         <image name="placeholder" width="100" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
