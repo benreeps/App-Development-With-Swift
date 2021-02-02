@@ -213,7 +213,9 @@
                             <outlet property="delegate" destination="whX-qn-0Mu" id="q1t-MT-eQN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Your Order" id="Piv-gg-EMk"/>
+                    <navigationItem key="navigationItem" title="Your Order" id="Piv-gg-EMk">
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="jz1-wg-Sfm"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pel-dQ-Xy9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
