@@ -214,20 +214,24 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Your Order" id="Piv-gg-EMk">
-                        <barButtonItem key="rightBarButtonItem" title="Submit" id="jz1-wg-Sfm"/>
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="jz1-wg-Sfm">
+                            <connections>
+                                <action selector="submitTapped:" destination="whX-qn-0Mu" id="TG3-I2-KLk"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="UdV-zg-OYD" kind="show" identifier="ConfirmationSegue" id="Yfx-Ow-1C8"/>
+                        <segue destination="UdV-zg-OYD" kind="show" identifier="ConfirmationSegue" id="7WE-l6-yCt"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pel-dQ-Xy9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1525" y="769"/>
         </scene>
-        <!--View Controller-->
+        <!--Order Confirmation View Controller-->
         <scene sceneID="BmJ-vg-pIp">
             <objects>
-                <viewController id="UdV-zg-OYD" sceneMemberID="viewController">
+                <viewController id="UdV-zg-OYD" customClass="OrderConfirmationViewController" customModule="Restaurant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GIl-sp-g8s">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -261,17 +265,38 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OUk-f5-JsB">
+                                <rect key="frame" x="172" y="616" width="70" height="32"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="IoG-9j-iov"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RkL-gF-49y" kind="unwind" unwindAction="unwindToOrderListWithSegue:" id="m3D-fy-oTk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0e5-w5-re6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="OUk-f5-JsB" firstAttribute="top" secondItem="Rij-XQ-uPP" secondAttribute="bottom" constant="134" id="9Bn-ys-pKn"/>
                             <constraint firstItem="Rij-XQ-uPP" firstAttribute="top" secondItem="0e5-w5-re6" secondAttribute="top" constant="275" id="F0u-27-IgZ"/>
                             <constraint firstItem="Rij-XQ-uPP" firstAttribute="centerX" secondItem="GIl-sp-g8s" secondAttribute="centerX" id="Pk7-8g-2Ai"/>
+                            <constraint firstItem="OUk-f5-JsB" firstAttribute="centerX" secondItem="GIl-sp-g8s" secondAttribute="centerX" id="lPl-IV-BqJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="o6e-pw-AAk"/>
+                    <connections>
+                        <outlet property="dismissButton" destination="OUk-f5-JsB" id="kyI-DU-rzR"/>
+                        <outlet property="timeRemainingLabel" destination="BqL-gS-1Nl" id="8zu-Q2-jkq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ziU-D8-lhH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="RkL-gF-49y" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2342.0289855072465" y="768.75"/>
         </scene>

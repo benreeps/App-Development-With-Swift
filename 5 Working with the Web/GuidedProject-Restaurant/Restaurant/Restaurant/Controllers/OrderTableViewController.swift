@@ -9,22 +9,46 @@ import UIKit
 
 class OrderTableViewController: UITableViewController {
     
-   
-
+    var orderMinutes = 0 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.leftBarButtonItem = editButtonItem
-        
-
-        // Observer 
         NotificationCenter.default.addObserver(tableView!, selector: #selector(UITableView.reloadData), name: MenuController.orderUpdatedNotification, object: nil)
-    
+        
     }
     
-
+    @IBAction func submitTapped(_ sender: Any) {
+        let orderTotal = MenuController.shared.order.menuItems.reduce(0.0) { (result, menuItem) -> Double in
+            return result + menuItem.price
+        }
+        let formattedOrder = String(format: "$%.2f", orderTotal)
+        
+        let alert = UIAlertController(title: "Confirm Order", message: "You are about to submit your order with a total of \(formattedOrder)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Submit", style: .default) {
+            action in self.uploadOrder()
+        })
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
+    func uploadOrder() {
+        let menuIds = MenuController.shared.order.menuItems.map
+        { $0.id }
+        MenuController.shared.submitOrder(forMenuIDs: menuIds) { (minutes) in
+            DispatchQueue.main.async {
+                if let minutes = minutes {
+                    self.orderMinutes = minutes
+                    self.performSegue(withIdentifier: "ConfirmationSegue", sender: nil)
+                }
+            }
+        }
+    }
+    
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -33,12 +57,12 @@ class OrderTableViewController: UITableViewController {
         
         return MenuController.shared.order.menuItems.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "OrderCellIdentifier", for: indexPath)
-
+        
         configure(cell, forItemAt: indexPath)
-
+        
         return cell
     }
     
@@ -56,5 +80,11 @@ class OrderTableViewController: UITableViewController {
         let menuItem = MenuController.shared.order.menuItems[indexPath.row]
         cell.textLabel?.text = menuItem.name
         cell.detailTextLabel?.text = String(format: "$%.2f", menuItem.price)
+    }
+    
+    //MARK:- Segue info
+    
+    @IBAction func unwindToOrderList(segue: UIStoryboardSegue) {
+        
     }
 }
