@@ -16,15 +16,15 @@ Excerpt From: [App Development With Swift](https://books.apple.com/us/book/app-d
 &nbsp; 
 
 <p align="center" >
-<img src="https://github.com/benreeps/App-Development-With-Swift/blob/Restaurant/Images/Restaurant-MenuCategories.png" width="255" /> &nbsp; &nbsp; &nbsp;
-<img src="https://github.com/benreeps/App-Development-With-Swift/blob/Restaurant/Images/Restaurant-MenuItems.png" width="255" /> &nbsp; &nbsp; &nbsp;
-<img src="https://github.com/benreeps/App-Development-With-Swift/blob/Restaurant/Images/Restaurant-MenuItemDetail.png" width="255" >
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/Restaurant-MenuCategories.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/Restaurant-MenuItems.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/Restaurant-MenuItemDetail.png" width="255" >
 </p>
 
 <p align="center" >
-<img src="https://github.com/benreeps/App-Development-With-Swift/blob/Restaurant/Images/Restaurant-Order.png" width="255" /> &nbsp; &nbsp; &nbsp;
-<img src="https://github.com/benreeps/App-Development-With-Swift/blob/Restaurant/Images/Restaurant-OrderAlert.png" width="255" /> &nbsp; &nbsp; &nbsp;
-<img src="https://github.com/benreeps/App-Development-With-Swift/blob/Restaurant/Images/Restaurant-OrderConfirmation.png" width="255" >
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/Restaurant-Order.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/Restaurant-OrderAlert.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/master/Images/Restaurant-OrderConfirmation.png" width="255" >
 </p>
 
 &nbsp;
