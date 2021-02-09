@@ -23,7 +23,7 @@ Excerpt From: [App Development With Swift](https://books.apple.com/us/book/app-d
 
 <p align="center" >
 <img src="https://github.com/benreeps/App-Development-With-Swift/blob/Restaurant/Images/Restaurant-Order.png" width="255" /> &nbsp; &nbsp; &nbsp;
-<img src="https://github.com/benreeps/App-Development-With-Swift/blob/Restaurant/Images/Restaurant-Order.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/Restaurant/Images/Restaurant-OrderAlert.png" width="255" /> &nbsp; &nbsp; &nbsp;
 <img src="https://github.com/benreeps/App-Development-With-Swift/blob/Restaurant/Images/Restaurant-OrderConfirmation.png" width="255" >
 </p>
 
