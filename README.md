@@ -8,6 +8,28 @@
 
 ## Guided Projects (Ch.4 - Ch.6)
 
+### Restaurant 
+
+An interactive menu for a restaurant that allows the customer to view a list of offerings, add items to an order, and submit the order to the restaurant. Using a server that you'll run on your own computer, you'll have an opportunity to modify the options, descriptions, and images that are returned from the API.
+Excerpt From: [App Development With Swift](https://books.apple.com/us/book/app-development-with-swift/id1219117996)
+
+&nbsp; 
+
+<p align="center" >
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/Restaurant/Images/Restaurant-MenuCategories.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/Restaurant/Images/Restaurant-MenuItems.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/Restaurant/Images/Restaurant-MenuItemDetail.png" width="255" >
+</p>
+
+<p align="center" >
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/Restaurant/Images/Restaurant-Order.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/Restaurant/Images/Restaurant-OrderAlert.png" width="255" /> &nbsp; &nbsp; &nbsp;
+<img src="https://github.com/benreeps/App-Development-With-Swift/blob/Restaurant/Images/Restaurant-OrderConfirmation.png" width="255" >
+</p>
+
+&nbsp;
+
+
 ### ToDo List (XCode Themed)
 
 A simple app that works as a todo list. 
