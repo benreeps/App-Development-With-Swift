@@ -10,24 +10,23 @@ import UIKit
 class MenuTableViewController: UITableViewController {
     
     var menuItems = [MenuItem]()
-    var category: String!
+    var category: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = category.capitalized
-        MenuController.shared.fetchMenuItems(forCategory: category) { (menuItems) in
-            if let menuItems = menuItems {
-                self.updateUI(with: menuItems)
-            }
-        }
+        NotificationCenter.default.addObserver(self, selector: #selector(updateUI), name: MenuController.menuDataUpdatedNotification, object: nil)
+        
+        updateUI()
     }
     
-    func updateUI(with menuItems: [MenuItem]) {
-        DispatchQueue.main.async {
-            self.menuItems = menuItems
-            self.tableView.reloadData()
-        }
+    // In order to use updateUI as as selector, you need to annotate the function with objective c
+    @objc func updateUI() {
+        guard let category = category else {return}
+        
+        title = category.capitalized
+        self.menuItems = MenuController.shared.item(forCategory: category) ?? []
+        tableView.reloadData()
     }
     
     func configure(_ cell: UITableViewCell, forItemAt indexPath: IndexPath ) {
@@ -72,5 +71,22 @@ class MenuTableViewController: UITableViewController {
             let index = tableView.indexPathForSelectedRow!.row
             menuItemDetailViewController.menuItem = menuItems[index]
         }
+    }
+    
+    //MARK:- Preserve View Controller State
+    
+    override func encodeRestorableState(with coder: NSCoder) {
+        super.encodeRestorableState(with: coder)
+        
+        guard let category = category else {return}
+        coder.encode(category, forKey: "category")
+    }
+    //MARK:- Restore View Cotroller State
+    
+    override func decodeRestorableState(with coder: NSCoder) {
+        super.decodeRestorableState(with: coder)
+        
+        category = coder.decodeObject(forKey: "category") as? String
+        updateUI()
     }
 }

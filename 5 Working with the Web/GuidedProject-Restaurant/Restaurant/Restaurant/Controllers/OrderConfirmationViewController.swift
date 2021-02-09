@@ -26,6 +26,4 @@ class OrderConfirmationViewController: UIViewController {
         
         timeRemainingLabel.text = "\(minutes!) minutes."
     }
-    
-   
 }

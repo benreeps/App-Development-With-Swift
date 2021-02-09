@@ -14,18 +14,14 @@ class CategoryTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        MenuController.shared.fetchCategories{ (categories) in
-            if let categories = categories {
-                self.updateUI(with: categories)
-            }
-        }
+        NotificationCenter.default.addObserver(self, selector: #selector(updateUI), name: MenuController.menuDataUpdatedNotification, object: nil)
+        
+        updateUI()
     }
-    
-    func updateUI(with categories: [String]) {
-        DispatchQueue.main.async {
-            self.categories = categories
-            self.tableView.reloadData() 
-        }
+    // In order to use updateUI as as selector, you need to annotate the function with objective c 
+    @objc func updateUI() {
+        categories = MenuController.shared.categories
+        tableView.reloadData()
     }
     
     func configure(_ cell: UITableViewCell, forItemAt indexPath: IndexPath) {
